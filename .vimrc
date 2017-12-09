@@ -13,32 +13,33 @@ Plugin 'gmarik/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
-Plugin 'bling/vim-airline'             " lean & mean status/tabline for vim that's light as air
-Plugin 'honza/vim-snippets'            " vim-snipmate default snippets
-Plugin 'justinmk/vim-sneak'            " jump to any location specified by two characters
-Plugin 'kien/ctrlp.vim'                " fuzzy file, buffer, mru, tag, etc finder
-Plugin 'majutsushi/tagbar'             " displays tags in a window, ordered by scope
-Plugin 'mhinz/vim-signify'             " show a diff using vim its sign column
-Plugin 'sjl/gundo.vim'                 " visualize your vim undo tree
-Plugin 'tpope/vim-fugitive'            " a git wrapper so awesome
-Plugin 'tpope/vim-sleuth'              " heuristically set buffer options
-Plugin 'tpope/vim-surround'            " quoting and parenthesizing made simple
-Plugin 'tpope/vim-vinegar'             " combine with netrw to create a delicious salad dressing
-Plugin 'tpope/vim-dispatch'            " asynchronous build and test dispatcher
-Plugin 'scrooloose/nerdtree'           " a file system tree explorer for vim editor
-Plugin 'scrooloose/nerdcommenter'      " intensely orgasmic commenting
-Plugin 'vim-scripts/taglist.vim'       " provides an overview of the structure of source code files
-Plugin 'airblade/vim-rooter'           " change vim working directory to project root
-Plugin 'vim-syntastic/syntastic'       " sytax checking hacks for vim
+Plugin 'vim-airline/vim-airline'         " lean & mean status/tabline for vim that's light as air
+Plugin 'vim-airline/vim-airline-themes'  " a collection of themes for vim-airline
+Plugin 'vim-scripts/taglist.vim'         " provides an overview of the structure of source code files
+Plugin 'vim-syntastic/syntastic'         " sytax checking hacks for vim
+Plugin 'airblade/vim-rooter'             " change vim working directory to project root
+Plugin 'honza/vim-snippets'              " vim-snipmate default snippets
+Plugin 'justinmk/vim-sneak'              " jump to any location specified by two characters
+Plugin 'kien/ctrlp.vim'                  " fuzzy file, buffer, mru, tag, etc finder
+Plugin 'majutsushi/tagbar'               " displays tags in a window, ordered by scope
+Plugin 'mhinz/vim-signify'               " show a diff using vim its sign column
+Plugin 'sjl/gundo.vim'                   " visualize your vim undo tree
+Plugin 'tpope/vim-fugitive'              " a git wrapper so awesome
+Plugin 'tpope/vim-sleuth'                " heuristically set buffer options
+Plugin 'tpope/vim-surround'              " quoting and parenthesizing made simple
+Plugin 'tpope/vim-vinegar'               " combine with netrw to create a delicious salad dressing
+Plugin 'tpope/vim-dispatch'              " asynchronous build and test dispatcher
+Plugin 'scrooloose/nerdtree'             " a file system tree explorer for vim editor
+Plugin 'scrooloose/nerdcommenter'        " intensely orgasmic commenting
 
 " languages
-Plugin 'elzr/vim-json'                 " json
-Plugin 'plasticboy/vim-markdown'       " markdown
-Plugin 'kongo2002/fsharp-vim'          " fsharp
-Plugin 'rust-lang/rust.vim'            " rust
-Plugin 'derekwyatt/vim-scala'          " scala
-Plugin 'OrangeT/vim-csharp'            " csharp
-Plugin 'artur-shaik/vim-javacomplete2' " java
+Plugin 'elzr/vim-json'                   " json
+Plugin 'plasticboy/vim-markdown'         " markdown
+Plugin 'kongo2002/fsharp-vim'            " fsharp
+Plugin 'rust-lang/rust.vim'              " rust
+Plugin 'derekwyatt/vim-scala'            " scala
+Plugin 'OrangeT/vim-csharp'              " csharp
+Plugin 'artur-shaik/vim-javacomplete2'   " java
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -219,4 +220,3 @@ let NERDTreeIgnore=[ '\.pyc$', '\.pyo$', '\.py\$class$', '\.obj$',
              \ '\.o$', '\.so$', '\.egg$', '^\.git$' ]
 
 " }}}
-
