@@ -16,3 +16,4 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 export PS1='\[\e[0;36m\][\[\e[0;36m\]\u\[\e[0;36m\]@\[\e[0;36m\]\h \[\e[0;32m\]\w\[\e[0;36m\]]\$\[\e[0m\]'
 
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+calc () { open -n -b "com.apple.Calculator" --args $* ;}
