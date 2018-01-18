@@ -4,6 +4,7 @@ Ant Support
 BashSupport
 Batch Scripts Support
 Bytecode Viewer
+CMD Support
 Copyright
 Coverage
 Docker integration
@@ -18,6 +19,7 @@ IntelliLang
 Java Bytecode Decompiler
 Java Stream Debugger
 JavaFX
+JRebel
 JUnit
 Kotlin
 Lombok Plugin
