@@ -1,0 +1,24 @@
+{
+    // Controls which editor is shown at startup, 
+    // if none is restored from the previous session. 
+    // Select 'none' to start without an editor, 'welcomePage' 
+    // to open the Welcome page (default), 'newUntitledFile' 
+    // to open a new untitled file (only opening an empty workspace).
+    "workbench.startupEditor": "none",
+    
+    // Controls the font size in pixels.
+    "editor.fontSize": 13,
+    
+    "workbench.colorTheme": "Material Theme",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.activityBar.visible": false,
+    "workbench.statusBar.visible": true,
+    
+    "editor.minimap.enabled": false,
+    
+    // The modifier to be used to add multiple cursors with the mouse. `ctrlCmd` maps 
+    // to `Control` on Windows and Linux and to `Command` on OSX. The Go To Definition and 
+    // Open Link mouse gestures will adapt such that they do not conflict with the 
+    // multicursor modifier.
+    "editor.multiCursorModifier": "alt"
+}
