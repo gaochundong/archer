@@ -201,7 +201,7 @@ let NERDTreeBookmarksFile=expand("$HOME/.vim/NERDTreeBookmarks")
 " Show the bookmarks table on startup
 let NERDTreeShowBookmarks=1
 
-" Show hidden files, too
+" Show hidden files
 let NERDTreeShowFiles=1
 let NERDTreeShowHidden=1
 
@@ -211,12 +211,15 @@ let NERDTreeQuitOnOpen=1
 " Highlight the selected entry in the tree
 let NERDTreeHighlightCursorline=1
 
-" Use a single click to fold/unfold directories and a double click to open
-" files
+" Use a single-click to fold/unfold directories 
+" and a double-click to open files
 let NERDTreeMouseMode=2
 
 " Don't display these kinds of files
-let NERDTreeIgnore=[ '\.pyc$', '\.pyo$', '\.py\$class$', '\.obj$',
-             \ '\.o$', '\.so$', '\.egg$', '^\.git$' ]
+let NERDTreeIgnore=[ 
+    \ '\.pyc$', '\.pyo$', '\.py\$class$', '\.obj$',
+    \ '\.o$', '\.so$', '\.egg$', '^\.git$',
+    \ '\.idea$', '\.iml$', '\.svn$', '^\.scc$',
+    \ '\.DS_Store$', '^target$' ]
 
 " }}}
