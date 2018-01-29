@@ -1,8 +1,5 @@
 ack
 bash-completion
-boost
-boost-python
-cabal-install
 cask
 cloc
 cmake
