@@ -1,0 +1,7 @@
+Check “Ignored files and folders” in File Types settings:
+
+File | Settings | Editor | File Types for Windows and Linux
+
+IntelliJ IDEA | Preferences | Editor | File Types for OS X
+
+Then add *.iml;*.idea; in the text box in the bottom.
