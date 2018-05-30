@@ -1,3 +1,7 @@
+# Run git cmds to check config for ignore
+# git config --get core.excludesfile
+# git config --global core.excludesfile '~/.gitignore_global'
+
 # Any file starts with ~
 *~
 
