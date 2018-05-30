@@ -1,0 +1,17 @@
+# Any file starts with ~
+*~
+
+# MacOS 
+.DS_Store
+
+# Java
+*.project
+*.classpath
+*.class
+*.iml
+*.idea/
+*.gitignore.bak
+*.settings
+*.settings/
+*/target
+*/target/
