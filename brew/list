@@ -1,6 +1,7 @@
 ack
 bash-completion
 cask
+clang-format
 cloc
 cmake
 consul
