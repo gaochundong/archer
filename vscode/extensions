@@ -12,12 +12,14 @@ Jave Dependency Viewer
 Java Extension Pack
 Java Test Runner
 Language Support for Java(TM) By Red Hat
+Log File Highlighter
 Markdown All in One
 Markdown Theme Kit
 markdownlint
 Material Icon Theme
 Material Theme
 Maven for Java
+nginx.conf
 npm
 Output Colorizer
 PlantUML
@@ -26,6 +28,7 @@ Python
 Rainbow CSV
 REST Client
 SQL Server(mssql)
+vscode-proto3
 XML Language Support
 XML Tools
 YAML
