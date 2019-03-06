@@ -1,0 +1,5 @@
+git config --global user.name "Dennis Gao"
+git config --global user.email "hello@world.com"
+git config --global credential.helper store
+git config --global --list
+more ~/.gitconfig
