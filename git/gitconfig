@@ -4,3 +4,6 @@ git config --global credential.helper store
 git config --global credential.helper 'cache --timeout=3600'
 git config --global --list
 more ~/.gitconfig
+
+# Generating a new SSH key and adding it to the ssh-agent
+https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent
