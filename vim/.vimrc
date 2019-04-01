@@ -10,13 +10,12 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-" The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 Plugin 'vim-airline/vim-airline'         " lean & mean status/tabline for vim that's light as air
 Plugin 'vim-airline/vim-airline-themes'  " a collection of themes for vim-airline
 Plugin 'vim-scripts/taglist.vim'         " provides an overview of the structure of source code files
-Plugin 'vim-syntastic/syntastic'         " sytax checking hacks for vim
+Plugin 'vim-syntastic/syntastic'         " syntax checking hacks for vim
 Plugin 'airblade/vim-rooter'             " change vim working directory to project root
 Plugin 'honza/vim-snippets'              " vim-snipmate default snippets
 Plugin 'justinmk/vim-sneak'              " jump to any location specified by two characters
@@ -31,6 +30,7 @@ Plugin 'tpope/vim-vinegar'               " combine with netrw to create a delici
 Plugin 'tpope/vim-dispatch'              " asynchronous build and test dispatcher
 Plugin 'scrooloose/nerdtree'             " a file system tree explorer for vim editor
 Plugin 'scrooloose/nerdcommenter'        " intensely orgasmic commenting
+Plugin 'mtdl9/vim-log-highlighting'      " syntax of logs
 
 " languages
 Plugin 'elzr/vim-json'                   " json
