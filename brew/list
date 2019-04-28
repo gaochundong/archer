@@ -8,6 +8,8 @@ consul
 consul-template
 dnsmasq
 dnstracer
+docker
+docker-compose
 emacs
 erlang
 fontconfig
@@ -21,6 +23,7 @@ glib
 go
 grc
 hh
+hstr
 htop
 imagemagick
 irssi
@@ -52,6 +55,7 @@ node
 nodebrew
 nodenv
 openssl
+ossp-uuid
 pcre
 perl
 pkg-config
