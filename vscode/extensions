@@ -1,37 +1,45 @@
-Auto Close Tag
-Auto Import
-Auto Rename Tag
-Beautify
-Bracket Pair Colorizer
-C#
-Code Spell Checker
-Debugger for Chrome
-Debugger for Java
-ESLint
-Git History
-Go
-IntelliSense for CSS class names in HTML
-Jave Dependency Viewer
-Java Extension Pack
-Java Test Runner
-Language Support for Java(TM) By Red Hat
-Log File Highlighter
-Markdown All in One
-Markdown Theme Kit
-markdownlint
-Material Icon Theme
-Material Theme
-Maven for Java
-nginx.conf
-npm
-Output Colorizer
-PlantUML
-Poor Man's T-SQL Formatter
-Python
-Rainbow CSV
-REST Client
-SQL Server(mssql)
-vscode-proto3
-XML Language Support
-XML Tools
-YAML
+code --install-extension alefragnani.project-manager
+code --install-extension CoenraadS.bracket-pair-colorizer
+code --install-extension DavidAnson.vscode-markdownlint
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension donjayamanne.githistory
+code --install-extension DotJoshJohnson.xml
+code --install-extension eg2.vscode-npm-script
+code --install-extension emilast.LogFileHighlighter
+code --install-extension Equinusocio.vsc-material-theme
+code --install-extension formulahendry.auto-close-tag
+code --install-extension formulahendry.auto-rename-tag
+code --install-extension HookyQR.beautify
+code --install-extension humao.rest-client
+code --install-extension IBM.output-colorizer
+code --install-extension IBM.XMLLanguageSupport
+code --install-extension jebbs.plantuml
+code --install-extension mechatroner.rainbow-csv
+code --install-extension ms-python.python
+code --install-extension ms-vscode.Go
+code --install-extension ms-vscode.Theme-MarkdownKit
+code --install-extension msjsdiag.debugger-for-chrome
+code --install-extension PeterJausovec.vscode-docker
+code --install-extension Pivotal.vscode-boot-dev-pack
+code --install-extension Pivotal.vscode-concourse
+code --install-extension Pivotal.vscode-manifest-yaml
+code --install-extension Pivotal.vscode-spring-boot
+code --install-extension PKief.material-icon-theme
+code --install-extension redhat.java
+code --install-extension redhat.vscode-yaml
+code --install-extension shanoor.vscode-nginx
+code --install-extension shd101wyy.markdown-preview-enhanced
+code --install-extension steoates.autoimport
+code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension TaoKlerks.poor-mans-t-sql-formatter-vscode
+code --install-extension VisualStudioExptTeam.vscodeintellicode
+code --install-extension vscjava.vscode-java-debug
+code --install-extension vscjava.vscode-java-dependency
+code --install-extension vscjava.vscode-java-pack
+code --install-extension vscjava.vscode-java-test
+code --install-extension vscjava.vscode-maven
+code --install-extension vscjava.vscode-spring-boot-dashboard
+code --install-extension vscjava.vscode-spring-initializr
+code --install-extension yzhang.markdown-all-in-one
+code --install-extension Zignd.html-css-class-completion
+code --install-extension zxh404.vscode-proto3
