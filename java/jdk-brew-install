@@ -26,3 +26,8 @@ drwxr-xr-x  3 root  wheel    96B Apr 29 11:06 adoptopenjdk-11.jdk
 [gaochundong@localhost /Library/Java/JavaVirtualMachines]$du -sh *
 299M	adoptopenjdk-11.jdk
 361M	jdk1.8.0_201.jdk
+[gaochundong@localhost /Library]$du -sh Java Perl Python Ruby | sort -h
+  0B	Python
+352K	Perl
+300M	Ruby
+660M	Java
