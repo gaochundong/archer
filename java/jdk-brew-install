@@ -1,1 +1,4 @@
-
+brew search openjdk
+brew tap adoptopenjdk/openjdk
+brew cask install adoptopenjdk11
+brew cask list
