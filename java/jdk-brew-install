@@ -17,3 +17,9 @@ From: https://github.com/adoptopenjdk/homebrew-openjdk/blob/master/Casks/adoptop
 AdoptOpenJDK 11
 ==> Artifacts
 OpenJDK11U-jdk_x64_mac_hotspot_11.0.3_7.pkg (Pkg)
+
+
+[gaochundong@localhost /Library/Java/JavaVirtualMachines]$ls -rlt
+total 0
+drwxr-xr-x  3 root  wheel    96B Mar  5 01:06 jdk1.8.0_201.jdk
+drwxr-xr-x  3 root  wheel    96B Apr 29 11:06 adoptopenjdk-11.jdk
