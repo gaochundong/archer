@@ -1,1 +1,0 @@
-brew list | sed s/\s+/\n/g

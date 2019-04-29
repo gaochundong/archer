@@ -1,0 +1,2 @@
+brew list | sed s/\s+/\n/g
+brew cask list | sed s/\s+/\n/g
