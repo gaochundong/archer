@@ -2,3 +2,14 @@ brew search openjdk
 brew tap adoptopenjdk/openjdk
 brew cask install adoptopenjdk11
 brew cask list
+brew cask info adoptopenjdk11
+
+brew cask info adoptopenjdk11
+adoptopenjdk11: 11,0.3:7
+https://adoptopenjdk.net/
+/usr/local/Caskroom/adoptopenjdk11/11,0.3:7 (181.4MB)
+From: https://github.com/adoptopenjdk/homebrew-openjdk/blob/master/Casks/adoptopenjdk11.rb
+==> Name
+AdoptOpenJDK 11
+==> Artifacts
+OpenJDK11U-jdk_x64_mac_hotspot_11.0.3_7.pkg (Pkg)
