@@ -4,6 +4,10 @@ brew cask install adoptopenjdk11
 brew cask list
 brew cask info adoptopenjdk11
 
+
+https://github.com/AdoptOpenJDK/homebrew-openjdk
+
+
 brew cask info adoptopenjdk11
 adoptopenjdk11: 11,0.3:7
 https://adoptopenjdk.net/
