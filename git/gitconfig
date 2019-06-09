@@ -7,3 +7,7 @@ more ~/.gitconfig
 
 # Generating a new SSH key and adding it to the ssh-agent
 https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent
+
+git config --local user.name "Dennis Gao"
+git config --local user.email "hello@world.com"
+git config --local --list
