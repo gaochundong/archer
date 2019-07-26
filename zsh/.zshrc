@@ -21,11 +21,11 @@ plugins=(git vscode colored-man-pages zsh-completions zsh-autosuggestions zsh-sy
 
 fpath=($ZSH_CUSTOM/plugins/zsh-completions $fpath)
 source $ZSH/oh-my-zsh.sh
-source '$HOME/.zplugin/bin/zplugin.zsh'
+source '/Users/gaochundong/.zplugin/bin/zplugin.zsh'
 autoload -Uz _zplugin
 (( ${+_comps} )) && _comps[zplugin]=_zplugin
 
-eval $(dircolors -b $HOME/.dircolors_list/dircolors-solarized/dircolors.ansi-light)
+eval $(dircolors -b /Users/gaochundong/.dircolors_list/dircolors-solarized/dircolors.ansi-light)
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
 alias cls='colorls -A --dark'
