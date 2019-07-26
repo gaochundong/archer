@@ -10,3 +10,4 @@ My favorite productivity tools.
 - ssh
 - vim
 - vscode
+- zsh
