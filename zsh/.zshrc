@@ -17,19 +17,21 @@ POWERLEVEL9K_DIR_HOME_BACKGROUND='201'
 POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND='033'
 POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='011'
 
-plugins=(git)
+plugins=(git vscode colored-man-pages zsh-completions zsh-autosuggestions zsh-syntax-highlighting zsh-history-substring-search)
 
+fpath=($ZSH_CUSTOM/plugins/zsh-completions $fpath)
 source $ZSH/oh-my-zsh.sh
-fpath=(/usr/local/share/zsh-completions $fpath)
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source '/Users/gaochundong/.zplugin/bin/zplugin.zsh'
+source '$HOME/.zplugin/bin/zplugin.zsh'
 autoload -Uz _zplugin
 (( ${+_comps} )) && _comps[zplugin]=_zplugin
 
-alias l='ls -l'
-alias ll='ls -lhaGFA'
-alias ls='ls -hG'
+eval $(dircolors -b $HOME/.dircolors_list/dircolors-solarized/dircolors.ansi-light)
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+
+alias cls='colorls -A --dark'
+alias l='gls -l --color=always'
+alias ll='gls -lhaGFA --color=always'
+alias ls='gls -hG --color=always'
 alias grep='grep --color=auto'
 alias ip='ifconfig | grep "inet" | grep -v 127.0.0.1'
 alias h='history'
