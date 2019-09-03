@@ -9,6 +9,9 @@ export ZSH="/Users/gaochundong/.oh-my-zsh"
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home
 export JAVA_OPTS="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
 export M2_HOME=/usr/local/Cellar/maven/3.6.0/libexec
+export HADOOP_HOME=/usr/local/Cellar/hadoop/3.1.2
+export HIVE_HOME=/usr/local/Cellar/hive/3.1.2/libexec
+export HCAT_HOME=/usr/local/opt/hive/libexec/hcatalog
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 POWERLEVEL9K_MODE='nerdfont-complete'
