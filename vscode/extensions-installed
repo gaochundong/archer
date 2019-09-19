@@ -1,5 +1,7 @@
+code --install-extension adamhartford.vscode-base64
 code --install-extension alefragnani.project-manager
 code --install-extension CoenraadS.bracket-pair-colorizer
+code --install-extension cssho.vscode-svgviewer
 code --install-extension DavidAnson.vscode-markdownlint
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension donjayamanne.githistory
@@ -7,6 +9,7 @@ code --install-extension DotJoshJohnson.xml
 code --install-extension eg2.vscode-npm-script
 code --install-extension emilast.LogFileHighlighter
 code --install-extension Equinusocio.vsc-material-theme
+code --install-extension esbenp.prettier-vscode
 code --install-extension formulahendry.auto-close-tag
 code --install-extension formulahendry.auto-rename-tag
 code --install-extension HookyQR.beautify
@@ -15,14 +18,16 @@ code --install-extension IBM.output-colorizer
 code --install-extension IBM.XMLLanguageSupport
 code --install-extension jakebathman.mysql-syntax
 code --install-extension jebbs.plantuml
+code --install-extension magicstack.MagicPython
 code --install-extension mechatroner.rainbow-csv
+code --install-extension mhutchie.git-graph
+code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
 code --install-extension ms-python.python
 code --install-extension ms-vscode.Go
 code --install-extension ms-vscode.Theme-MarkdownKit
 code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension msysyamamoto.vscode-fluentd
-code --install-extension PeterJausovec.vscode-docker
 code --install-extension Pivotal.vscode-boot-dev-pack
 code --install-extension Pivotal.vscode-concourse
 code --install-extension Pivotal.vscode-manifest-yaml
