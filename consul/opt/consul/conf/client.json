@@ -1,0 +1,15 @@
+{
+    "server": false,
+    "data_dir": "/opt/consul/data",
+    "log_file": "/opt/consul/logs/",
+    "log_level": "INFO",
+    "enable_syslog": true,
+    "rejoin_after_leave": true,
+    "datacenter": "cn-north-1",
+    "retry_join": [
+        "a.b.c.d",
+        "e.f.g.h"
+    ],
+    "retry_interval": "30s",
+    "encrypt": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+}
