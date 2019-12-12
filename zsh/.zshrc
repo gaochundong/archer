@@ -6,6 +6,7 @@ DISABLE_LS_COLORS="false"
 
 export TERM=xterm-256color
 export ZSH="/Users/gaochundong/.oh-my-zsh"
+export GOPATH="/Users/gaochundong/g/github/go"
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home
 export JAVA_OPTS="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
 export M2_HOME=/usr/local/Cellar/maven/3.6.0/libexec
@@ -40,6 +41,7 @@ alias grep='grep --color=auto'
 alias ip='ifconfig | grep "inet" | grep -v 127.0.0.1'
 alias h='history'
 alias prettyjson='python -m json.tool'
+alias git2consul='$GOPATH/src/git2consul-go/build/bin/git2consul'
 
 alias ..='cd ..'
 alias ...='cd ../..'
