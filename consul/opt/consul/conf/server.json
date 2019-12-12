@@ -1,0 +1,19 @@
+{
+    "server": true,
+    "ui": true,
+    "data_dir": "/opt/consul/data",
+    "log_file": "/opt/consul/logs/",
+    "log_level": "INFO",
+    "enable_syslog": true,
+    "rejoin_after_leave": true,
+    "datacenter": "cn-north-1",
+    "bootstrap_expect": 3,
+    "retry_join": [
+        "provider=aws region=cn-north-1 addr_type=private_v4 tag_key=ConsulServiceDiscovery tag_value=true"
+    ],
+    "retry_interval": "30s",
+    "bind_addr": "a.b.c.d",
+    "client_addr": "a.b.c.d",
+    "advertise_addr": "a.b.c.d",
+    "encrypt": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+}
