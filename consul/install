@@ -1,1 +1,41 @@
 https://www.consul.io/
+
+
+/Library/LaunchDaemons > brew services list                                                                                                                                                                       7320  11:55:04 
+Name           Status  User        Plist
+consul         error   gaochundong /Users/gaochundong/Library/LaunchAgents/homebrew.mxcl.consul.plist
+dnsmasq        stopped
+docker-machine stopped
+kafka          stopped
+mysql          stopped
+nginx          stopped
+redis          stopped
+vnstat         stopped
+zookeeper      stopped
+
+
+which consul                                                                                                                                                                                                  7312  11:44:50 
+/usr/local/bin/consul
+
+
+brew info consul                                                                                                                                                                                              7313  11:51:03 
+consul: stable 1.6.2 (bottled), HEAD
+Tool for service discovery, monitoring and configuration
+https://www.consul.io
+/usr/local/Cellar/consul/1.6.1 (8 files, 94.0MB) *
+  Poured from bottle on 2019-10-26 at 20:58:21
+From: https://github.com/Homebrew/homebrew-core/blob/master/Formula/consul.rb
+==> Dependencies
+Build: go@1.12 ✘, gox ✘
+==> Options
+--HEAD
+	Install HEAD version
+==> Caveats
+To have launchd start consul now and restart at login:
+  brew services start consul
+Or, if you don't want/need a background service you can just run:
+  consul agent -dev -advertise 127.0.0.1
+==> Analytics
+install: 3,248 (30 days), 8,408 (90 days), 34,200 (365 days)
+install-on-request: 2,966 (30 days), 7,710 (90 days), 31,251 (365 days)
+build-error: 0 (30 days)
