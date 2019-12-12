@@ -1,10 +1,13 @@
 ack
 apache-flink
 awscli
+bash-completion
 clang-format
 cloc
 cmake
+consul
 coreutils
+dep
 dnsmasq
 dnstracer
 docker
@@ -12,6 +15,7 @@ docker-compose
 docker-machine
 fontconfig
 freetype
+fzf
 gd
 gdb
 gdbm
@@ -19,8 +23,10 @@ gettext
 git
 git-flow
 glib
+go
 grc
 hadoop
+helm
 hive
 hstr
 htop
@@ -29,6 +35,7 @@ jpeg
 jq
 json-c
 kafka
+kubernetes-cli
 libde265
 libevent
 libffi
@@ -57,6 +64,7 @@ pcre2
 pipenv
 pstree
 python
+rancher-cli
 readline
 redis
 screenfetch
