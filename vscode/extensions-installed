@@ -1,5 +1,6 @@
 code --install-extension adamhartford.vscode-base64
 code --install-extension alefragnani.project-manager
+code --install-extension bibhasdn.unique-lines
 code --install-extension CoenraadS.bracket-pair-colorizer
 code --install-extension cssho.vscode-svgviewer
 code --install-extension DavidAnson.vscode-markdownlint
@@ -40,6 +41,7 @@ code --install-extension shanoor.vscode-nginx
 code --install-extension shd101wyy.markdown-preview-enhanced
 code --install-extension steoates.autoimport
 code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension Tyriar.sort-lines
 code --install-extension VisualStudioExptTeam.vscodeintellicode
 code --install-extension vscjava.vscode-java-debug
 code --install-extension vscjava.vscode-java-dependency
@@ -48,6 +50,7 @@ code --install-extension vscjava.vscode-java-test
 code --install-extension vscjava.vscode-maven
 code --install-extension vscjava.vscode-spring-boot-dashboard
 code --install-extension vscjava.vscode-spring-initializr
+code --install-extension wingrunr21.vscode-ruby
 code --install-extension yzhang.markdown-all-in-one
 code --install-extension Zignd.html-css-class-completion
 code --install-extension zxh404.vscode-proto3
