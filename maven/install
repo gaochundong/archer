@@ -1,0 +1,19 @@
+brew info maven                                                                                                                                                                                           1 ↵  7306  11:36:12 
+maven: stable 3.6.3
+Java-based project management
+https://maven.apache.org/
+Conflicts with:
+  mvnvm (because also installs a 'mvn' executable)
+/usr/local/Cellar/maven/3.6.0 (79 files, 10.1MB) *
+  Built from source on 2019-03-05 at 01:18:34
+From: https://github.com/Homebrew/homebrew-core/blob/master/Formula/maven.rb
+==> Requirements
+Required: java >= 1.7 ✔
+==> Analytics
+install: 62,508 (30 days), 154,420 (90 days), 543,120 (365 days)
+install-on-request: 58,447 (30 days), 145,634 (90 days), 512,855 (365 days)
+build-error: 0 (30 days)
+
+
+which mvn                                                                                                                                                                                                     7307  11:36:19 
+/usr/local/bin/mvn
