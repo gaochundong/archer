@@ -1,0 +1,23 @@
+[Unit]
+Description=Consul Agent
+Author=WhoAreYou
+Company=WhoAreYou
+Department=WhoAreYou
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+User=ubuntu
+Group=ubuntu
+Type=simple
+LimitNOFILE=65536
+PermissionsStartOnly=true
+KillSignal=SIGINT
+KillMode=process
+Restart=on-failure
+RestartSec=42s
+ExecStart=/opt/consul/bin/consul agent -config-dir=/opt/consul/conf
+ExecReload=/bin/kill -HUP $MAINPID
+
+[Install]
+WantedBy=multi-user.target
