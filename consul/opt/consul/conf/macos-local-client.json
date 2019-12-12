@@ -1,0 +1,15 @@
+{
+    "server": false,
+    "log_level": "INFO",
+    "data_dir": "/Users/gaochundong/.consul/data",
+    "log_file": "/Users/gaochundong/.consul/logs/",
+    "enable_syslog": false,
+    "rejoin_after_leave": true,
+    "datacenter": "cn-north-1",
+    "retry_join": [
+        "a.b.c.d"
+    ],
+    "retry_interval": "30s",
+    "ui": true,
+    "encrypt": "XXXXXXXXXXXXXXXXXXX"
+}
