@@ -1,5 +1,4 @@
 code --install-extension adamhartford.vscode-base64
-code --install-extension alefragnani.project-manager
 code --install-extension bibhasdn.unique-lines
 code --install-extension CoenraadS.bracket-pair-colorizer
 code --install-extension cssho.vscode-svgviewer
@@ -9,7 +8,9 @@ code --install-extension donjayamanne.githistory
 code --install-extension DotJoshJohnson.xml
 code --install-extension eg2.vscode-npm-script
 code --install-extension emilast.LogFileHighlighter
+code --install-extension Equinusocio.vsc-community-material-theme
 code --install-extension Equinusocio.vsc-material-theme
+code --install-extension equinusocio.vsc-material-theme-icons
 code --install-extension esbenp.prettier-vscode
 code --install-extension formulahendry.auto-close-tag
 code --install-extension formulahendry.auto-rename-tag
@@ -29,10 +30,6 @@ code --install-extension ms-vscode.Go
 code --install-extension ms-vscode.Theme-MarkdownKit
 code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension msysyamamoto.vscode-fluentd
-code --install-extension Pivotal.vscode-boot-dev-pack
-code --install-extension Pivotal.vscode-concourse
-code --install-extension Pivotal.vscode-manifest-yaml
-code --install-extension Pivotal.vscode-spring-boot
 code --install-extension PKief.material-icon-theme
 code --install-extension rebornix.ruby
 code --install-extension redhat.java
@@ -48,8 +45,6 @@ code --install-extension vscjava.vscode-java-dependency
 code --install-extension vscjava.vscode-java-pack
 code --install-extension vscjava.vscode-java-test
 code --install-extension vscjava.vscode-maven
-code --install-extension vscjava.vscode-spring-boot-dashboard
-code --install-extension vscjava.vscode-spring-initializr
 code --install-extension wingrunr21.vscode-ruby
 code --install-extension yzhang.markdown-all-in-one
 code --install-extension Zignd.html-css-class-completion
