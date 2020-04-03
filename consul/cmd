@@ -1,0 +1,7 @@
+
+sudo systemctl enable consul
+
+sudo systemctl start consul
+sudo systemctl stop consul
+
+/opt/consul/bin/consul services deregister -id=service_id_123
