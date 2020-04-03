@@ -1,0 +1,2 @@
+# 打包推送至 maven repo
+mvn clean install -U deploy -N
