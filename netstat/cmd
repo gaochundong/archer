@@ -1,0 +1,15 @@
+# Ubuntu 上查看TCP/UDP监听端口
+netstat -lnp -t
+netstat -lnp -u
+-l Show only listening sockets.
+-n Show numerical addresses instead of trying to determine symbolic host, port or user names.
+-p Show the PID and name of the program to which each socket belongs.
+-t TCP
+-u UDP
+
+# MacOS 上查看TCP/UDP监听端口 (不同操作系统上的netstat不一样)
+netstat -ln -p tcp
+netstat -ln -p udp
+-l Print full IPv6 address.
+-n Show network addresses as numbers
+-p Show statistics about protocol, which is either a well-known name for a protocol or an alias for it.
