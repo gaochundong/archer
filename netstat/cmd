@@ -13,3 +13,19 @@ netstat -ln -p udp
 -l Print full IPv6 address.
 -n Show network addresses as numbers
 -p Show statistics about protocol, which is either a well-known name for a protocol or an alias for it.
+
+# Ubuntu 使用 ss 工具查看监听端口
+ss -lpt
+ss -lpu
+-l Display only listening sockets
+-a Display both listening and non-listening
+-p Show process using socket.
+-t Display TCP sockets.
+-u Display UDP sockets.
+
+# Ubuntu 使用 lsof 工具查看监听端口
+lsof -iTCP -sTCP:LISTEN -P -n
+-i selects  the listing of files any of whose Internet address matches the address
+-s alone directs lsof to display file size at all times.
+-P inhibits the conversion of port numbers to port names for network files.
+-n inhibits the conversion of network numbers to host names for network files. 
