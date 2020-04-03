@@ -1,2 +1,7 @@
+# 设置 maven repo 密码
+code settings.xml settings-security.xml
+mvn --encrypt-master-password
+mvn --encrypt-password
+
 # 打包推送至 maven repo
 mvn clean install -U deploy -N
