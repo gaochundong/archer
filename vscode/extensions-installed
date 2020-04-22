@@ -44,7 +44,6 @@ code --install-extension vscjava.vscode-java-debug
 code --install-extension vscjava.vscode-java-dependency
 code --install-extension vscjava.vscode-java-pack
 code --install-extension vscjava.vscode-java-test
-code --install-extension vscjava.vscode-maven
 code --install-extension wingrunr21.vscode-ruby
 code --install-extension yzhang.markdown-all-in-one
 code --install-extension Zignd.html-css-class-completion
