@@ -15,12 +15,7 @@ export HIVE_HOME=/usr/local/Cellar/hive/3.1.2/libexec
 export HCAT_HOME=/usr/local/opt/hive/libexec/hcatalog
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
-POWERLEVEL9K_MODE='nerdfont-complete'
-POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
-POWERLEVEL9K_DIR_HOME_BACKGROUND='201'
-POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND='033'
-POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='011'
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 plugins=(git vscode colored-man-pages zsh-completions zsh-autosuggestions zsh-syntax-highlighting zsh-history-substring-search)
 
