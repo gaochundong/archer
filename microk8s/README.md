@@ -203,6 +203,7 @@ MicroK8s is a CNCF certified upstream Kubernetes deployment that runs entirely o
 - multipass exec microk8s-vm -- /snap/bin/microk8s.kubectl expose deployment urban-gateway-management-app --type=NodePort --port=7200 --name=urban-gateway-management-nodeport -n urbanboot
 
 > https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0
+> 
 > The big downside is that each service you expose with a LoadBalancer will get its own IP address, and you have to pay for a LoadBalancer per exposed service, which can get expensive!
 
 - multipass exec microk8s-vm -- /snap/bin/microk8s.kubectl expose deployment urban-traffic-management-app --type=LoadBalancer --port=7200 --name=urban-traffic-management-loadbalancer -n urbanboot
