@@ -2,15 +2,15 @@
 
 ## Multipass & MicroK8s
 
-### What is Kubernetes
+### What is Kubernetes?
 
 Kubernetes clusters host containerised applications in a reliable and scalable way. Having DevOps in mind, Kubernetes makes maintenance tasks such as upgrades dead simple.
 
-### What is Multipass
+### What is Multipass?
 
 Multipass is a lightweight VM manager for Linux, Windows and macOS. It’s designed for developers who want a fresh Ubuntu environment with a single command. It uses KVM on Linux, Hyper-V on Windows and HyperKit on macOS to run the VM with minimal overhead. It can also use VirtualBox on Windows and macOS. Multipass will fetch images for you and keep them up to date.
 
-### What is MicroK8s
+### What is MicroK8s?
 
 MicroK8s is a CNCF certified upstream Kubernetes deployment that runs entirely on your workstation or edge device. Being a snap it runs all Kubernetes services natively (i.e. no virtual machines) while packing the entire set of libraries and binaries needed. Installation is limited by how fast you can download a couple of hundred megabytes and the removal of MicroK8s leaves nothing behind.
 
@@ -48,7 +48,7 @@ MicroK8s is a CNCF certified upstream Kubernetes deployment that runs entirely o
 - multipass exec microk8s-vm -- sudo usermod -a -G microk8s ubuntu
 - multipass exec microk8s-vm -- sudo sudo chown -f -R ubuntu ~/.kube
 
-### 增加公钥
+### 增加访问公钥
 
 > 在 ~/.ssh/authorized_keys 增加自己的公钥，则可方便的进行SSH登录
 
@@ -63,13 +63,13 @@ MicroK8s is a CNCF certified upstream Kubernetes deployment that runs entirely o
 
 - multipass exec microk8s-vm -- /snap/bin/microk8s.config
 
-### 在 kubeconfig 中可以找到集群信息，可以登录查看
+### 在 kubeconfig 中可以找到集群信息，登录查看
 
 - server: https://192.168.64.2:16443
 - username: admin
 - password: xxx
 
-### 增加插件
+### 增加 DNS 插件
 
 - multipass exec microk8s-vm -- /snap/bin/microk8s.enable dns
 - multipass exec microk8s-vm -- /snap/bin/microk8s.enable dashboard
@@ -78,7 +78,7 @@ MicroK8s is a CNCF certified upstream Kubernetes deployment that runs entirely o
 
 - multipass exec microk8s-vm -- /snap/bin/microk8s.kubectl cluster-info
 
-### 访问 Grafana 地址
+### 尝试访问 Grafana 地址
 
 - https://192.168.64.2:16443/api/v1/namespaces/kube-system/services/monitoring-grafana/proxy
 
@@ -117,13 +117,13 @@ MicroK8s is a CNCF certified upstream Kubernetes deployment that runs entirely o
 
 - multipass exec microk8s-vm -- /snap/bin/microk8s.enable registry
 
-### 查看 registry 结果
+### 查看集群内组件状态
 
 - multipass exec microk8s-vm -- /snap/bin/microk8s.status | grep enabled
 
-### 保存本地镜像
+### 保存本地 docker 镜像
 
-docker images
+- docker images
 
 > Save one or more images to a tar archive
 
@@ -159,7 +159,7 @@ docker images
 - multipass exec microk8s-vm -- /snap/bin/microk8s.ctr images remove docker.io/library/urban-traffic-management-app:latest
 - multipass exec microk8s-vm -- /snap/bin/microk8s.ctr images remove docker.io/library/urban-gateway-management-app:latest
 
-### 配置镜像位置
+### 在部署文件中配置镜像位置
 
 > 替换deployment.yaml文件中的image路径
 
@@ -178,7 +178,7 @@ docker images
 - kubectl --insecure-skip-tls-verify get deployments -n urbanboot
 - kubectl --insecure-skip-tls-verify get pods -n urbanboot
 
-### 删除部署
+### 删除部署，会自动删除 Pods
 
 - kubectl --insecure-skip-tls-verify delete deployment urban-district-management-app -n urbanboot
 - kubectl --insecure-skip-tls-verify delete deployment urban-traffic-management-app -n urbanboot
@@ -235,6 +235,8 @@ docker images
 - kubectl --insecure-skip-tls-verify describe pod urban-traffic-management-app-58d7578547-p277h -n urbanboot
 
 ### 查看 Endpoint 信息
+
+> Spring Cloud Kubernetes 会通过 API 查询 Endpoints
 
 - kubectl --insecure-skip-tls-verify get services -n urbanboot
 - kubectl --insecure-skip-tls-verify get endpoints -n urbanboot
