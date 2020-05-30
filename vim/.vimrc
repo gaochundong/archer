@@ -40,6 +40,10 @@ Plugin 'rust-lang/rust.vim'              " rust
 Plugin 'derekwyatt/vim-scala'            " scala
 Plugin 'OrangeT/vim-csharp'              " csharp
 Plugin 'artur-shaik/vim-javacomplete2'   " java
+Plugin 'leafgarland/typescript-vim'      " typescript
+Plugin 'pangloss/vim-javascript'         " javascript
+Plugin 'jnwhiteh/vim-golang'             " go
+Plugin 'vim-python/python-syntax'        " python
 
 " All of your Plugins must be added before the following line
 call vundle#end()
