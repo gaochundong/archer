@@ -1,5 +1,4 @@
 ack
-apache-flink
 awscli
 bash-completion
 clang-format
@@ -66,7 +65,6 @@ openssl@1.1
 ossp-uuid
 pcre
 pcre2
-pipenv
 protobuf
 pstree
 python
@@ -85,7 +83,6 @@ tcptrace
 tcptraceroute
 tcptunnel
 telnet
-tmux
 tree
 unrar
 vnstat

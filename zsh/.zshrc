@@ -31,6 +31,9 @@ alias grep='grep --color=auto'
 alias ip='ifconfig | grep "inet" | grep -v 127.0.0.1'
 alias h='history'
 
+# homebrew
+export PATH="/usr/local/sbin:$PATH"
+
 # java
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home
 export JAVA_OPTS="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
