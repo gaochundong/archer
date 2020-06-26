@@ -14,10 +14,10 @@ code --install-extension equinusocio.vsc-material-theme-icons
 code --install-extension esbenp.prettier-vscode
 code --install-extension formulahendry.auto-close-tag
 code --install-extension formulahendry.auto-rename-tag
+code --install-extension golang.Go
 code --install-extension HookyQR.beautify
 code --install-extension humao.rest-client
 code --install-extension IBM.output-colorizer
-code --install-extension IBM.XMLLanguageSupport
 code --install-extension jakebathman.mysql-syntax
 code --install-extension jebbs.plantuml
 code --install-extension magicstack.MagicPython
@@ -26,7 +26,6 @@ code --install-extension mhutchie.git-graph
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
 code --install-extension ms-python.python
-code --install-extension ms-vscode.Go
 code --install-extension ms-vscode.Theme-MarkdownKit
 code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension msysyamamoto.vscode-fluentd
@@ -35,6 +34,7 @@ code --install-extension PKief.material-icon-theme
 code --install-extension raynigon.nginx-formatter
 code --install-extension rebornix.ruby
 code --install-extension redhat.java
+code --install-extension redhat.vscode-xml
 code --install-extension redhat.vscode-yaml
 code --install-extension shanoor.vscode-nginx
 code --install-extension shd101wyy.markdown-preview-enhanced
