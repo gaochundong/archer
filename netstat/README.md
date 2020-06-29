@@ -1,3 +1,5 @@
+
+```bash
 # Ubuntu 上查看TCP/UDP监听端口
 netstat -lnp -t
 netstat -lnp -u
@@ -29,3 +31,4 @@ lsof -iTCP -sTCP:LISTEN -P -n
 -s alone directs lsof to display file size at all times.
 -P inhibits the conversion of port numbers to port names for network files.
 -n inhibits the conversion of network numbers to host names for network files. 
+```
