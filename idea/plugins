@@ -1,40 +1,19 @@
 .ignore
-Ant Support
+Atom Material Icons
 BashSupport
-Batch Scripts Support
-Bytecode Viewer
-CMD Support
-Copyright
-Coverage
-Docker integration
-EditorConfig
-Gauge
-Git Integration
-GitHub
+Docker
 Gitmoji
-Gradle
-I18n for Java
-IntelliLang
-Java Bytecode Decompiler
-Java Stream Debugger
-JavaFX
-JUnit
+Gradianto
 JUnitGenerator V2.0
-Lombok Plugin
+Lombok
 Markdown Support
 Material Theme UI
 Maven Helper
-Maven Integration
-MetricsReloaded
 nginx Support
-Properties Support
+PlantUML integration
+PlantUML Syntax Check
 Rainbow Brackets
-Settings Repository
-Task Management
-Terminal
-TestNG-J
+Scala
 Toml
+Unit File Support
 VisualVM Launcher
-XPathView + XSLT Support
-XSLT-Debugger
-YAML
