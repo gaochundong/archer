@@ -1,0 +1,9 @@
+# brew tap
+
+adoptopenjdk/openjdk
+homebrew/cask
+homebrew/cask-fonts
+homebrew/core
+homebrew/services
+mongodb/brew
+weaveworks/tap
