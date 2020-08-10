@@ -1,41 +1,50 @@
-LC_ALL=en_US.UTF-8
-LC_CTYPE=en_US.UTF-8
-LANG=en_US.UTF-8
-CASE_SENSITIVE="true"
-DISABLE_LS_COLORS="false"
+# display locale settings, see `locale`
+LANG=en_US.UTF-8       # Used as a substitute for any unset LC_* variable.
+LANGUAGE=en_US         # List of fallback message translation languages.
+LC_ALL="en_US.UTF-8"   # A macro that will override the setting of all other LC_* variables.
+LC_CTYPE="en_US.UTF-8" # Sets the locale for the LC_CTYPE category.
 
 # zsh theme
 export TERM=xterm-256color
 export ZSH="/Users/gaochundong/.oh-my-zsh"
-
 ZSH_THEME="powerlevel10k/powerlevel10k"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-plugins=(git vscode colored-man-pages zsh-completions zsh-autosuggestions zsh-syntax-highlighting zsh-history-substring-search)
+# zstyle dir colors
+alias dircolors="gdircolors" # GNU dircolors is provided as gdircolors by brew's coreutils package
+CASE_SENSITIVE="true"
+DISABLE_LS_COLORS="false"
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
+# zsh plugins
+plugins=(git vscode zsh-completions zsh-autosuggestions zsh-dircolors-solarized zsh-syntax-highlighting zsh-history-substring-search colored-man-pages)
+
+# zsh autoloading fuctions
 fpath=($ZSH_CUSTOM/plugins/zsh-completions $fpath)
 source $ZSH/oh-my-zsh.sh
 source '/Users/gaochundong/.zplugin/bin/zplugin.zsh'
 autoload -Uz _zplugin
 (( ${+_comps} )) && _comps[zplugin]=_zplugin
 
-eval $(dircolors -b /Users/gaochundong/.dircolors_list/dircolors-solarized/dircolors.ansi-light)
-zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
-
 # alias
 alias cls='colorls -A --dark'
 alias l='gls -l --color=always'
 alias ll='gls -lhaGFA --color=always'
 alias ls='gls -hG --color=always'
+alias bat='bat --style plain'
 alias grep='grep --color=auto'
-alias ip='ifconfig | grep "inet" | grep -v 127.0.0.1'
 alias h='history'
+alias ip='ifconfig | grep "inet" | grep -v 127.0.0.1'
 
 # homebrew
 export PATH="/usr/local/sbin:$PATH"
 
+# git
+alias gittags="git for-each-ref --sort=creatordate --format '%(refname) %(creatordate)' refs/tags"
+
 # java
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home
+export JAVA11_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
 export JAVA_OPTS="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
 export M2_HOME=/usr/local/Cellar/maven/3.6.3_1/libexec
 
@@ -49,3 +58,7 @@ export PATH="$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 # go
 export GOPATH="/Users/gaochundong/g/github/go"
 alias git2consul='$GOPATH/src/git2consul-go/build/bin/git2consul'
+
+# python
+alias python3.7='/usr/local/Cellar/python/3.7.7/bin/python3.7'
+alias python3.8='/usr/local/Cellar/python@3.8/3.8.5/bin/python3.8'
