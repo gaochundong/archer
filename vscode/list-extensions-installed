@@ -14,7 +14,8 @@ code --install-extension equinusocio.vsc-material-theme-icons
 code --install-extension esbenp.prettier-vscode
 code --install-extension formulahendry.auto-close-tag
 code --install-extension formulahendry.auto-rename-tag
-code --install-extension golang.Go
+code --install-extension golang.go
+code --install-extension hangxingliu.vscode-nginx-conf-hint
 code --install-extension HookyQR.beautify
 code --install-extension humao.rest-client
 code --install-extension IBM.output-colorizer
@@ -26,6 +27,7 @@ code --install-extension mhutchie.git-graph
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
 code --install-extension ms-python.python
+code --install-extension ms-vscode.cpptools
 code --install-extension ms-vscode.Theme-MarkdownKit
 code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension msysyamamoto.vscode-fluentd

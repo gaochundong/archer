@@ -44,6 +44,9 @@ Plugin 'leafgarland/typescript-vim'      " typescript
 Plugin 'pangloss/vim-javascript'         " javascript
 Plugin 'jnwhiteh/vim-golang'             " go
 Plugin 'vim-python/python-syntax'        " python
+Plugin 'stephpy/vim-yaml'                " yaml
+Plugin 'cespare/vim-toml'                " toml
+Plugin 'chr4/nginx.vim'                  " nginx
 
 " All of your Plugins must be added before the following line
 call vundle#end()

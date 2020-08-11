@@ -37,6 +37,7 @@ alias h='history'
 alias ip='ifconfig | grep "inet" | grep -v 127.0.0.1'
 
 # homebrew
+export HOMEBREW_NO_AUTO_UPDATE=1
 export PATH="/usr/local/sbin:$PATH"
 
 # git
