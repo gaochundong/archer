@@ -37,7 +37,9 @@ alias h='history'
 alias ip='ifconfig | grep "inet" | grep -v 127.0.0.1'
 
 # homebrew
-export HOMEBREW_NO_AUTO_UPDATE=1
+export HOMEBREW_NO_ANALYTICS=1        # will not send analytics
+export HOMEBREW_NO_AUTO_UPDATE=1      # disable auto update before running install
+export HOMEBREW_NO_INSTALL_CLEANUP=1  # disable periodically auto cleanup
 export PATH="/usr/local/sbin:$PATH"
 
 # git
