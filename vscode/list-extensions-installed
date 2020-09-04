@@ -4,7 +4,6 @@ code --install-extension CoenraadS.bracket-pair-colorizer
 code --install-extension cssho.vscode-svgviewer
 code --install-extension DavidAnson.vscode-markdownlint
 code --install-extension dbaeumer.vscode-eslint
-code --install-extension donjayamanne.githistory
 code --install-extension DotJoshJohnson.xml
 code --install-extension eg2.vscode-npm-script
 code --install-extension emilast.LogFileHighlighter
@@ -19,7 +18,6 @@ code --install-extension hangxingliu.vscode-nginx-conf-hint
 code --install-extension HookyQR.beautify
 code --install-extension humao.rest-client
 code --install-extension IBM.output-colorizer
-code --install-extension jakebathman.mysql-syntax
 code --install-extension jebbs.plantuml
 code --install-extension magicstack.MagicPython
 code --install-extension mechatroner.rainbow-csv
@@ -31,6 +29,7 @@ code --install-extension ms-vscode.cpptools
 code --install-extension ms-vscode.Theme-MarkdownKit
 code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension msysyamamoto.vscode-fluentd
+code --install-extension mtxr.sqltools
 code --install-extension oderwat.indent-rainbow
 code --install-extension PKief.material-icon-theme
 code --install-extension raynigon.nginx-formatter

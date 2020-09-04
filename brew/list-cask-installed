@@ -1,4 +1,3 @@
-adoptopenjdk11
 firefox
 font-hack-nerd-font
 jd-gui
@@ -6,4 +5,5 @@ lens
 microsoft-auto-update
 microsoft-edge
 multipass
+visualvm
 wireshark

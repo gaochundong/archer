@@ -46,7 +46,6 @@ gmp
 gnutls
 go
 gobject-introspection
-gradle
 graphite2
 graphviz
 grc
@@ -63,7 +62,6 @@ jasper
 jpeg
 jq
 json-c
-jupyterlab
 kafka
 kubernetes-cli
 lame
@@ -93,7 +91,6 @@ libyaml
 libzip
 little-cms2
 lzo
-maven
 mongodb-community-shell
 mtr
 multitail
@@ -116,6 +113,7 @@ ossp-uuid
 p11-kit
 pandoc
 pango
+parallel
 pcre
 pcre2
 pixman
@@ -123,7 +121,7 @@ pkg-config
 procs
 protobuf
 pstree
-python
+python@3.7
 python@3.8
 rancher-cli
 rav1e
@@ -133,10 +131,6 @@ ripgrep
 rtmpdump
 rubberband
 rust
-sbt
-sbtenv
-scala
-scalaenv
 screenfetch
 sd
 sdl2
@@ -159,9 +153,11 @@ tokei
 tree
 unbound
 unrar
+vegeta
 vnstat
 webp
 wget
+wrk
 x264
 x265
 xvid
