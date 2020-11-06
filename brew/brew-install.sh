@@ -1,5 +1,8 @@
 1. Install Homebrew
 https://brew.sh/
+brew install 正常包
+brew cask install 包含GUI的包
+brew tap 三方包
 
 2. List brew install
 brew list | sed s/\s+/\n/g
