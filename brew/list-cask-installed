@@ -1,9 +1,9 @@
-firefox
-font-hack-nerd-font
-jd-gui
-lens
-microsoft-auto-update
-microsoft-edge
-multipass
-visualvm
-wireshark
+brew cask install firefox
+brew cask install font-hack-nerd-font
+brew cask install jd-gui
+brew cask install lens
+brew cask install microsoft-auto-update
+brew cask install microsoft-edge
+brew cask install multipass
+brew cask install visualvm
+brew cask install wireshark
