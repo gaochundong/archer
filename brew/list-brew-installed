@@ -1,169 +1,169 @@
-ack
-aom
-aws-iam-authenticator
-awscli
-azure-cli
-bandwhich
-bash-completion
-bat
-cairo
-clang-format
-cloc
-cmake
-consul
-coreutils
-dav1d
-deno
-dep
-dive
-dnsmasq
-dnstracer
-docker
-docker-compose
-docker-machine
-dust
-eksctl
-eslint
-exa
-fd
-ffmpeg
-flac
-flyway
-fontconfig
-freetype
-frei0r
-fribidi
-fzf
-gd
-gdb
-gdbm
-gettext
-giflib
-git
-git-flow
-glib
-gmp
-gnutls
-go
-gobject-introspection
-graphite2
-graphviz
-grc
-grex
-gts
-harfbuzz
-helm
-hstr
-htop
-httpie
-hyperfine
-icu4c
-ipython
-jasper
-jpeg
-jq
-json-c
-kafka
-kubernetes-cli
-lame
-leptonica
-libass
-libbluray
-libde265
-libevent
-libffi
-libidn2
-libnet
-libogg
-libpcap
-libpng
-libsamplerate
-libsndfile
-libsoxr
-libssh2
-libtasn1
-libtiff
-libtool
-libunistring
-libvidstab
-libvorbis
-libvpx
-libyaml
-libzip
-little-cms2
-lzo
-mongodb-community-shell
-mtr
-multitail
-mysql
-ncdu
-ncurses
-netpbm
-nettle
-nginx
-nmap
-node
-nvm
-oniguruma
-opencore-amr
-openjdk
-openjpeg
-openssl@1.1
-opus
-ossp-uuid
-p11-kit
-pandoc
-pango
-parallel
-pcre
-pcre2
-pixman
-pkg-config
-procs
-protobuf
-pstree
-python@3.7
-python@3.8
-rancher-cli
-rav1e
-readline
-redis
-ripgrep
-rtmpdump
-rubberband
-rust
-screenfetch
-sd
-sdl2
-snappy
-speex
-sqlite
-srt
-sshuttle
-ssldump
-tcpdump
-tcpkali
-tcpstat
-tcptrace
-tcptunnel
-telnet
-tesseract
-theora
-tldr
-tokei
-tree
-unbound
-unrar
-vegeta
-vnstat
-webp
-wget
-wrk
-x264
-x265
-xvid
-xz
-yq
-zeromq
-zookeeper
-zoxide
+brew install ack
+brew install aom
+brew install aws-iam-authenticator
+brew install awscli
+brew install azure-cli
+brew install bandwhich
+brew install bash-completion
+brew install bat
+brew install cairo
+brew install clang-format
+brew install cloc
+brew install cmake
+brew install consul
+brew install coreutils
+brew install dav1d
+brew install deno
+brew install dep
+brew install dive
+brew install dnsmasq
+brew install dnstracer
+brew install docker
+brew install docker-compose
+brew install docker-machine
+brew install dust
+brew install eksctl
+brew install eslint
+brew install exa
+brew install fd
+brew install ffmpeg
+brew install flac
+brew install flyway
+brew install fontconfig
+brew install freetype
+brew install frei0r
+brew install fribidi
+brew install fzf
+brew install gd
+brew install gdb
+brew install gdbm
+brew install gettext
+brew install giflib
+brew install git
+brew install git-flow
+brew install glib
+brew install gmp
+brew install gnutls
+brew install go
+brew install gobject-introspection
+brew install graphite2
+brew install graphviz
+brew install grc
+brew install grex
+brew install gts
+brew install harfbuzz
+brew install helm
+brew install hstr
+brew install htop
+brew install httpie
+brew install hyperfine
+brew install icu4c
+brew install ipython
+brew install jasper
+brew install jpeg
+brew install jq
+brew install json-c
+brew install kafka
+brew install kubernetes-cli
+brew install lame
+brew install leptonica
+brew install libass
+brew install libbluray
+brew install libde265
+brew install libevent
+brew install libffi
+brew install libidn2
+brew install libnet
+brew install libogg
+brew install libpcap
+brew install libpng
+brew install libsamplerate
+brew install libsndfile
+brew install libsoxr
+brew install libssh2
+brew install libtasn1
+brew install libtiff
+brew install libtool
+brew install libunistring
+brew install libvidstab
+brew install libvorbis
+brew install libvpx
+brew install libyaml
+brew install libzip
+brew install little-cms2
+brew install lzo
+brew install mongodb-community-shell
+brew install mtr
+brew install multitail
+brew install mysql
+brew install ncdu
+brew install ncurses
+brew install netpbm
+brew install nettle
+brew install nginx
+brew install nmap
+brew install node
+brew install nvm
+brew install oniguruma
+brew install opencore-amr
+brew install openjdk
+brew install openjpeg
+brew install openssl@1.1
+brew install opus
+brew install ossp-uuid
+brew install p11-kit
+brew install pandoc
+brew install pango
+brew install parallel
+brew install pcre
+brew install pcre2
+brew install pixman
+brew install pkg-config
+brew install procs
+brew install protobuf
+brew install pstree
+brew install python@3.7
+brew install python@3.8
+brew install rancher-cli
+brew install rav1e
+brew install readline
+brew install redis
+brew install ripgrep
+brew install rtmpdump
+brew install rubberband
+brew install rust
+brew install screenfetch
+brew install sd
+brew install sdl2
+brew install snappy
+brew install speex
+brew install sqlite
+brew install srt
+brew install sshuttle
+brew install ssldump
+brew install tcpdump
+brew install tcpkali
+brew install tcpstat
+brew install tcptrace
+brew install tcptunnel
+brew install telnet
+brew install tesseract
+brew install theora
+brew install tldr
+brew install tokei
+brew install tree
+brew install unbound
+brew install unrar
+brew install vegeta
+brew install vnstat
+brew install webp
+brew install wget
+brew install wrk
+brew install x264
+brew install x265
+brew install xvid
+brew install xz
+brew install yq
+brew install zeromq
+brew install zookeeper
+brew install zoxide
