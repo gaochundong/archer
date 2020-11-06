@@ -10,3 +10,4 @@ brew list --cask | sed s/\s+/\n/g
 
 4. Reinstall List
 brew list | sed s/\s+/\n/g | xargs -L 1 echo 'brew install'
+brew list --cask | sed s/\s+/\n/g | xargs -L 1 echo 'brew cask install'
