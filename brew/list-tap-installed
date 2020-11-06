@@ -1,8 +1,8 @@
-adoptopenjdk/openjdk
-graalvm/tap
-homebrew/cask
-homebrew/cask-fonts
-homebrew/core
-homebrew/services
-mongodb/brew
-weaveworks/tap
+brew tap adoptopenjdk/openjdk
+brew tap graalvm/tap
+brew tap homebrew/cask
+brew tap homebrew/cask-fonts
+brew tap homebrew/core
+brew tap homebrew/services
+brew tap mongodb/brew
+brew tap weaveworks/tap
