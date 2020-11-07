@@ -1,6 +1,5 @@
 brew install ack
 brew install aom
-brew install aws-iam-authenticator
 brew install awscli
 brew install azure-cli
 brew install bandwhich
