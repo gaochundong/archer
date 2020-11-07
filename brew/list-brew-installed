@@ -106,7 +106,6 @@ brew install node
 brew install nvm
 brew install oniguruma
 brew install opencore-amr
-brew install openjdk
 brew install openjpeg
 brew install openssl@1.1
 brew install opus
