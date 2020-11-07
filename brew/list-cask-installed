@@ -5,5 +5,4 @@ brew cask install lens
 brew cask install microsoft-auto-update
 brew cask install microsoft-edge
 brew cask install multipass
-brew cask install visualvm
 brew cask install wireshark
