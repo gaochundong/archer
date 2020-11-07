@@ -1,5 +1,5 @@
 {
-    "editor.fontSize": 13,
+    "editor.fontSize": 14,
     "editor.minimap.enabled": false,
     "editor.multiCursorModifier": "alt",
 
@@ -17,3 +17,5 @@
 
     "java.errors.incompleteClasspath.severity": "ignore"
 }
+
+# 安装 zsh theme 后，需要修改 Terminal/Integrated/Font Family 为 Hack Nerd Font 字体，以便 zsh 可以正常显示
