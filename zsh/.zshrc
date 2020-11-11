@@ -34,7 +34,6 @@ zinit light zdharma/history-search-multi-word
 zinit light ael-code/zsh-colored-man-pages
 
 # alias
-alias cls='colorls -A --dark'
 alias l='gls -l --color=always'
 alias ll='gls -lhaGFA --color=always'
 alias ls='gls -hG --color=always'
