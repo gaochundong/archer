@@ -65,10 +65,10 @@ export M2_HOME=/Users/dennis/.sdkman/candidates/maven/current
 # python
 alias python3.7='/usr/local/Cellar/python@3.7/3.7.9/bin/python3.7'
 alias python3.8='/usr/local/Cellar/python@3.8/3.8.6_1/bin/python3.8'
-alias python3.9='/usr/local/Cellar/python@3.8/3.9.0_1/bin/python3.9'
+alias python3.9='/usr/local/Cellar/python@3.9/3.9.0_1/bin/python3.9'
 alias pip3.7='/usr/local/Cellar/python@3.7/3.7.9/bin/pip3.7'
 alias pip3.8='/usr/local/Cellar/python@3.8/3.8.6_1/bin/pip3.8'
-alias pip3.9='/usr/local/Cellar/python@3.8/3.9.0_1/bin/pip3.9'
+alias pip3.9='/usr/local/Cellar/python@3.9/3.9.0_1/bin/pip3.9'
 
 # nodejs
 export NVM_DIR="$HOME/.nvm"
