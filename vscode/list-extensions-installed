@@ -25,6 +25,7 @@ code --install-extension mhutchie.git-graph
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
 code --install-extension ms-python.python
+code --install-extension ms-python.vscode-pylance
 code --install-extension ms-vscode.cpptools
 code --install-extension ms-vscode.Theme-MarkdownKit
 code --install-extension msjsdiag.debugger-for-chrome

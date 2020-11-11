@@ -1,5 +1,6 @@
 brew install ack
 brew install aom
+brew install aws-iam-authenticator
 brew install awscli
 brew install azure-cli
 brew install bandwhich
@@ -90,6 +91,7 @@ brew install libvpx
 brew install libyaml
 brew install libzip
 brew install little-cms2
+brew install lua
 brew install lzo
 brew install mongodb-community-shell
 brew install mtr
@@ -105,6 +107,7 @@ brew install node
 brew install nvm
 brew install oniguruma
 brew install opencore-amr
+brew install openjdk
 brew install openjpeg
 brew install openssl@1.1
 brew install opus
@@ -115,6 +118,7 @@ brew install pango
 brew install parallel
 brew install pcre
 brew install pcre2
+brew install perl
 brew install pixman
 brew install pkg-config
 brew install procs
@@ -129,6 +133,7 @@ brew install redis
 brew install ripgrep
 brew install rtmpdump
 brew install rubberband
+brew install ruby
 brew install rust
 brew install screenfetch
 brew install sd
@@ -153,6 +158,7 @@ brew install tree
 brew install unbound
 brew install unrar
 brew install vegeta
+brew install vim
 brew install vnstat
 brew install webp
 brew install wget

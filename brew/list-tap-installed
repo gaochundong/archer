@@ -4,6 +4,7 @@ brew tap graalvm/tap
 brew tap mongodb/brew
 brew tap weaveworks/tap
 
-brew tap homebrew/cask-fonts
 brew tap homebrew/cask
+brew tap homebrew/cask-fonts
 brew tap homebrew/core
+brew tap homebrew/services
