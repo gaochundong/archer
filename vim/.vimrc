@@ -69,6 +69,7 @@ Plugin 'ekalinin/dockerfile.vim'          " dockerfile
 Plugin 'uarun/vim-protobuf'               " protobuf
 Plugin 'solarnz/thrift.vim'               " thrift
 Plugin 'gurpreetatwal/vim-avro'           " avro
+Plugin 'aklt/plantuml-syntax'             " plantuml
 
 " All of your Plugins must be added before the following line
 call vundle#end()
