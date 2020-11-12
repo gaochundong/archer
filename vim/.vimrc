@@ -43,6 +43,7 @@ Plugin 'xuyuanp/nerdtree-git-plugin'      " lets nerdtree show git status flags
 Plugin 'junegunn/vim-slash'               " clears search highlight when cursor is moved
 Plugin 'junegunn/gv.vim'                  " git commit browser
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight' " nerdtree file extensions highlight
+Plugin 'dracula/vim',{'name':'dracula'}          " dracula theme for vim
 
 " Languages
 Plugin 'uiiaoo/java-syntax.vim'           " java
