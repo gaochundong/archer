@@ -101,7 +101,13 @@ if (has("termguicolors"))
 endif
 
 " enable color theme
+" default could be here /usr/share/vim/vimNN/colors/
 " colorscheme default
+" colorscheme darkblue
+" colorscheme desert
+" colorscheme murphy
+" colorscheme ron
+" colorscheme pablo
 " colorscheme desert
 " colorscheme dracula
 " colorscheme onedark
