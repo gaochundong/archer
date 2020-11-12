@@ -20,7 +20,6 @@ Plugin 'gmarik/Vundle.vim'
 
 " Plugins
 Plugin 'vim-airline/vim-airline'          " lean & mean status/tabline for vim that's light as air
-Plugin 'vim-airline/vim-airline-themes'   " a collection of themes for vim-airline
 Plugin 'vim-scripts/taglist.vim'          " provides an overview of the structure of source code files
 Plugin 'vim-syntastic/syntastic'          " syntax checking hacks for vim
 Plugin 'airblade/vim-rooter'              " change vim working directory to project root
@@ -42,8 +41,18 @@ Plugin 'ryanoasis/vim-devicons'           " adds file type icons to vim plugins 
 Plugin 'xuyuanp/nerdtree-git-plugin'      " lets nerdtree show git status flags
 Plugin 'junegunn/vim-slash'               " clears search highlight when cursor is moved
 Plugin 'junegunn/gv.vim'                  " git commit browser
+
+" Themes
+Plugin 'vim-airline/vim-airline-themes'          " a collection of themes for vim-airline
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight' " nerdtree file extensions highlight
 Plugin 'dracula/vim',{'name':'dracula'}          " dracula theme for vim
+Plugin 'joshdick/onedark.vim'                    " dark color theme
+Plugin 'Rigellute/shades-of-purple.vim'          " a 24bit dark vim colorscheme
+Plugin 'glepnir/oceanic-material'                " a dark colorscheme for vim
+Plugin 'mhartington/oceanic-next'                " vim theme inspired by Oceanic Next for Sublime
+Plugin 'liuchengxu/space-vim-dark'               " successor of space-vim-dark for light background support
+Plugin 'junegunn/seoul256.vim'                   " a low-contrast Vim color scheme based on Seoul Colors
+Plugin 'cocopon/iceberg.vim'                     " well-designed, bluish color scheme for Vim
 
 " Languages
 Plugin 'uiiaoo/java-syntax.vim'           " java
@@ -83,9 +92,25 @@ filetype plugin indent on    " use different indent for different file type
 " enable syntax highlighting
 syntax on
 
-" enable color theme
-colorscheme desert
+" background setting
 set background=dark
+
+" enable 24bit true color
+if (has("termguicolors"))
+ set termguicolors
+endif
+
+" enable color theme
+" colorscheme default
+" colorscheme desert
+" colorscheme dracula
+" colorscheme onedark
+" colorscheme shades_of_purple
+" colorscheme oceanic_material
+" colorscheme OceanicNext
+" colorscheme seoul256
+" colorscheme iceberg
+colorscheme space-vim-dark
 
 " add a bit extra margin to the left
 set foldcolumn=1
@@ -243,6 +268,7 @@ set guifont=Droid_Sans_Mono_Nerd_Font_Complete:h11
 
 " fonts setting
 let g:airline_powerline_fonts=1
+let g:airline_theme='badwolf'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin 'scrooloose/nerdtree' Settings
