@@ -25,7 +25,7 @@
             <mirrorOf>jcenter</mirrorOf>
             <id>aliyun-jcenter</id>
             <name>Aliyun Maven Repository Mirror</name>
-            <url>https://maven.aliyun.com/repository/public</url>
+            <url>https://maven.aliyun.com/repository/jcenter</url>
         </mirror>
         <mirror>
             <mirrorOf>google</mirrorOf>
