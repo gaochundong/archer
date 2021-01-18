@@ -21,6 +21,43 @@
             <name>Aliyun Maven Repository Mirror</name>
             <url>https://maven.aliyun.com/repository/snapshots</url>
         </mirror>
+        <mirror>
+            <mirrorOf>jcenter</mirrorOf>
+            <id>aliyun-jcenter</id>
+            <name>Aliyun Maven Repository Mirror</name>
+            <url>https://maven.aliyun.com/repository/public</url>
+        </mirror>
+        <mirror>
+            <mirrorOf>google</mirrorOf>
+            <id>aliyun-google</id>
+            <name>Aliyun Maven Repository Mirror</name>
+            <url>https://maven.aliyun.com/repository/google</url>
+        </mirror>
+        <mirror>
+            <mirrorOf>spring</mirrorOf>
+            <id>aliyun-spring</id>
+            <name>Aliyun Maven Repository Mirror</name>
+            <url>https://maven.aliyun.com/repository/spring</url>
+        </mirror>
+        <mirror>
+            <mirrorOf>apache</mirrorOf>
+            <id>aliyun-apache</id>
+            <name>Aliyun Maven Repository Mirror</name>
+            <url>https://maven.aliyun.com/repository/apache-snapshots</url>
+        </mirror>
+        <mirror>
+            <mirrorOf>gradle-plugin</mirrorOf>
+            <id>aliyun-gradle-plugin</id>
+            <name>Aliyun Maven Repository Mirror</name>
+            <url>https://maven.aliyun.com/repository/gradle-plugin</url>
+        </mirror>
+        <mirror>
+            <mirrorOf>spring-plugin</mirrorOf>
+            <id>aliyun-spring-plugin</id>
+            <name>Aliyun Maven Repository Mirror</name>
+            <url>https://maven.aliyun.com/repository/spring-plugin</url>
+        </mirror>
+
     </mirrors>
 
 </settings>
