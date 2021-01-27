@@ -7,5 +7,8 @@ mvn --encrypt-password
 mvn clean install -U deploy -N -Ptest
 
 # 直接下载maven包和代码
+mvn dependency:help
 mvn dependency:get -Dartifact=org.python:jython:2.7.2:jar
-mvn dependency:get -Dartifact=org.python:jython:2.7.2:jar:sources
+mvn dependency:get -Dartifact=org.python:jython:2.7.2:sources
+mvn dependency:get -Dartifact=io.vertx:vertx-core:4.0.0:jar -s ~/.m2/settings-aliyun.xml
+mvn dependency:get -Dartifact=io.vertx:vertx-core:4.0.0:sources -s ~/.m2/settings-aliyun.xml
