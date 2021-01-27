@@ -5,3 +5,7 @@ mvn --encrypt-password
 
 # 打包推送至 maven repo
 mvn clean install -U deploy -N -Ptest
+
+# 直接下载maven包和代码
+mvn dependency:get -Dartifact=org.python:jython:2.7.2:jar
+mvn dependency:get -Dartifact=org.python:jython:2.7.2:jar:sources
