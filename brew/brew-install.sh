@@ -6,7 +6,7 @@ brew tap 三方包
 
 2. List brew install
 brew list | sed s/\s+/\n/g
-brew cask list | sed s/\s+/\n/g
+brew list --formula | sed s/\s+/\n/g
 brew list --cask | sed s/\s+/\n/g
 
 3. Third Party
