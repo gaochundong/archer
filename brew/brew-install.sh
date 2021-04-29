@@ -15,5 +15,6 @@ brew untap ***
 
 4. Reinstall List
 brew list | sed s/\s+/\n/g | xargs -L 1 echo 'brew install'
+brew list --formula | sed s/\s+/\n/g | xargs -L 1 echo 'brew install'
 brew list --cask | sed s/\s+/\n/g | xargs -L 1 echo 'brew cask install'
 brew tap | xargs -L 1 echo 'brew tap'
