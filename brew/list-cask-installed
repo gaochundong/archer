@@ -1,9 +1,23 @@
-brew cask install firefox
+brew cask install font-fira-code-nerd-font
+brew cask install font-fira-mono-nerd-font
+brew cask install font-go-mono-nerd-font
 brew cask install font-hack-nerd-font
+brew cask install font-jetbrains-mono-nerd-font
+brew cask install font-meslo-lg-nerd-font
+brew cask install font-sauce-code-pro-nerd-font
+brew cask install font-ubuntu-mono-nerd-font
+brew cask install font-ubuntu-nerd-font
 brew cask install jd-gui
 brew cask install lens
+brew cask install mat
+brew cask install mqttfx
+brew cask install multipass
+brew cask install postman
+brew cask install rar
+
+// 可选安装
+brew cask install firefox
 brew cask install microsoft-auto-update
 brew cask install microsoft-edge
-brew cask install multipass
 brew cask install visualvm
 brew cask install wireshark
