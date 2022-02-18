@@ -1,5 +1,8 @@
 1. Install Homebrew
 https://brew.sh/
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+会自动安装 Xcode Command Line Tools
+
 brew install 正常包
 brew cask install 包含GUI的包
 brew tap 三方包
