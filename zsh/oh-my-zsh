@@ -1,3 +1,28 @@
+# zsh设为默认shell
+chsh -s /bin/zsh
+reboot
+
+# 安装oh-my-zsh
+https://github.com/ohmyzsh/ohmyzsh
+使用curl安装
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+使用wget安装
+sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
+# 需要先安装Nerd字体
+可使用 brew install --cask 安装字体
+
+# zplugin已经变更为zinit
+git clone https://github.com/zdharma/zinit.git ~/.zinit/bin
+source ~/.zinit/bin/zinit.zsh
+
+# zinit作者删库的替代方案
+但zdharma已经删除了zinit库，删库跑路了，可以使用社区版本替代
+git clone https://github.com/zdharma-continuum/zinit.git ~/.zinit/bin
+source ~/.zinit/bin/zinit.zsh
+
+# 参考资料
+
 https://gist.github.com/kevin-smets/8568070
 
 https://github.com/agnoster/agnoster-zsh-theme
@@ -8,6 +33,3 @@ https://github.com/powerline/fonts
 https://github.com/ryanoasis/nerd-fonts
 
 https://github.com/zdharma/zplugin
-
-# 需要先安装Nerd字体
-# zplugin已经变更为zinit
