@@ -1,13 +1,13 @@
 // 安装字体
-brew cask install font-fira-code-nerd-font
-brew cask install font-fira-mono-nerd-font
-brew cask install font-go-mono-nerd-font
-brew cask install font-hack-nerd-font
-brew cask install font-jetbrains-mono-nerd-font
-brew cask install font-meslo-lg-nerd-font
-brew cask install font-sauce-code-pro-nerd-font
-brew cask install font-ubuntu-mono-nerd-font
-brew cask install font-ubuntu-nerd-font
+brew install font-fira-code-nerd-font --cask
+brew install font-fira-mono-nerd-font --cask
+brew install font-go-mono-nerd-font --cask
+brew install font-hack-nerd-font --cask
+brew install font-jetbrains-mono-nerd-font --cask
+brew install font-meslo-lg-nerd-font --cask
+brew install font-sauce-code-pro-nerd-font --cask
+brew install font-ubuntu-mono-nerd-font --cask
+brew install font-ubuntu-nerd-font --cask
 
 // 可选安装
 brew cask install jd-gui
