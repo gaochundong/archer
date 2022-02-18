@@ -1,3 +1,4 @@
+// 安装字体
 brew cask install font-fira-code-nerd-font
 brew cask install font-fira-mono-nerd-font
 brew cask install font-go-mono-nerd-font
@@ -7,6 +8,8 @@ brew cask install font-meslo-lg-nerd-font
 brew cask install font-sauce-code-pro-nerd-font
 brew cask install font-ubuntu-mono-nerd-font
 brew cask install font-ubuntu-nerd-font
+
+// 可选安装
 brew cask install jd-gui
 brew cask install lens
 brew cask install mat
