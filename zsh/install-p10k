@@ -1,7 +1,10 @@
 # Oh My Zsh
+https://github.com/gaochundong/archer/blob/master/zsh/oh-my-zsh
+
+# 安装powerlevel10k主题
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 
-# run p10k config
+# 配置powerlevel10k主题
 p10k configure
 
 # xterm-256-color chart
