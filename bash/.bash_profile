@@ -14,6 +14,7 @@ alias ls='gls -hG --color=always'
 alias grep='grep --color=auto'
 alias ip='ifconfig | grep "inet" | grep -v 127.0.0.1'
 alias h='history'
+alias ctags="/usr/local/Cellar/ctags/5.8_2/bin/ctags"
 
 # java
 export JAVA_HOME=$HOME/.sdkman/candidates/java/current
