@@ -1,3 +1,25 @@
+git config will search for configuration options:
+
+$(prefix)/etc/gitconfig
+System-wide configuration file.
+
+$XDG_CONFIG_HOME/git/config
+Second user-specific configuration file.
+
+~/.gitconfig
+User-specific configuration file. Also called "global" configuration file.
+
+$GIT_DIR/config
+Repository specific configuration file.
+
+$GIT_DIR/config.worktree
+This is optional and is only searched when extensions.worktreeConfig is present in $GIT_DIR/config.
+
+git config -e 编辑配置文件 
+git config --local -e 编辑仓库级别配置文件
+git config --global -e 编辑用户级别配置文件
+git config --system -e 编辑系统级别配置文件
+
 git config --global user.name "Dennis Gao"
 git config --global user.email "hello@world.com"
 git config --global credential.helper store
