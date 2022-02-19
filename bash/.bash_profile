@@ -16,10 +16,17 @@ alias ip='ifconfig | grep "inet" | grep -v 127.0.0.1'
 alias h='history'
 
 # java
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home
+export JAVA_HOME=$HOME/.sdkman/candidates/java/current
+export JAVA8_HOME=$HOME/.sdkman/candidates/java/8.0.322-tem
+export JAVA11_HOME=$HOME/.sdkman/candidates/java/11.0.14-tem
+export JAVA17_HOME=$HOME/.sdkman/candidates/java/17.0.2-tem
 export JAVA_OPTS="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
-export M2_HOME=/usr/local/Cellar/maven/3.6.3_1/libexec
+export M2_HOME=$HOME/.sdkman/candidates/maven/current
 
 # go
-export GOPATH="/Users/gaochundong/g/github/go"
+export GOPATH="$HOME/g/github/go"
 alias git2consul='$GOPATH/src/git2consul-go/build/bin/git2consul'
+
+# sdkman
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
