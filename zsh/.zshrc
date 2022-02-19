@@ -74,8 +74,9 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 # java
 export JAVA_HOME=$HOME/.sdkman/candidates/java/current
-export JAVA8_HOME=$HOME/.sdkman/candidates/java/8.0.272.hs-adpt
-export JAVA11_HOME=$HOME/.sdkman/candidates/java/11.0.9.hs-adpt
+export JAVA8_HOME=$HOME/.sdkman/candidates/java/8.0.322-tem
+export JAVA11_HOME=$HOME/.sdkman/candidates/java/11.0.14-tem
+export JAVA17_HOME=$HOME/.sdkman/candidates/java/17.0.2-tem
 export JAVA_OPTS="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
 export M2_HOME=$HOME/.sdkman/candidates/maven/current
 
