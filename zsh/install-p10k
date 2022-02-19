@@ -6,6 +6,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~
 
 # 配置powerlevel10k主题
 p10k configure
+配置完成后会生成 ~/.p10k.zsh 可修改如下配置信息
 
 # xterm-256-color chart
 https://upload.wikimedia.org/wikipedia/commons/1/15/Xterm_256color_chart.svg
