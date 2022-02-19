@@ -58,6 +58,7 @@ alias bat='bat --style plain'
 alias grep='grep --color=auto'
 alias h='history'
 alias ip='ifconfig | grep "inet" | grep -v 127.0.0.1 | sort'
+alias ctags="/usr/local/Cellar/ctags/5.8_2/bin/ctags"
 
 # homebrew
 export HOMEBREW_NO_ANALYTICS=1        # will not send analytics
