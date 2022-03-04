@@ -85,8 +85,8 @@ export JAVA_OPTS="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=
 
 # maven
 export M2_HOME=$HOME/.sdkman/candidates/maven/current
-export MAVEN_HOME==$HOME/.sdkman/candidates/maven/current
-export MAVEN6_HOME==$HOME/.sdkman/candidates/maven/3.6.3
+export MAVEN_HOME=$HOME/.sdkman/candidates/maven/current
+export MAVEN6_HOME=$HOME/.sdkman/candidates/maven/3.6.3
 alias mvn8="JAVA_HOME=$JAVA8_HOME && mvn"
 alias mvn11="JAVA_HOME=$JAVA11_HOME && mvn"
 
