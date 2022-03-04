@@ -18,8 +18,9 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # zsh config
-DISABLE_AUTO_UPDATE="false" # disable bi-weekly auto-update checks
-export UPDATE_ZSH_DAYS=13   # how often to auto-update (in days)
+DISABLE_UPDATE_PROMPT="true" # replay yes and automatically upgrade
+DISABLE_AUTO_UPDATE="true"   # disable bi-weekly auto-update checks
+export UPDATE_ZSH_DAYS=13    # how often to auto-update (in days)
 
 # zstyle dir colors
 alias dircolors="gdircolors" # GNU dircolors is provided as gdircolors by brew's coreutils package
@@ -59,6 +60,8 @@ alias grep='grep --color=auto'
 alias h='history'
 alias ip='ifconfig | grep "inet" | grep -v 127.0.0.1 | sort'
 alias ctags="/usr/local/Cellar/ctags/5.8_2/bin/ctags"
+alias jp='ssh xxx@jumper.xxx.com'
+alias jprm="rm -f ~/.ssh/master*"
 
 # homebrew
 export HOMEBREW_NO_ANALYTICS=1        # will not send analytics
