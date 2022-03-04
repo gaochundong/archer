@@ -82,7 +82,20 @@ export JAVA8_HOME=$HOME/.sdkman/candidates/java/8.0.322-tem
 export JAVA11_HOME=$HOME/.sdkman/candidates/java/11.0.14-tem
 export JAVA17_HOME=$HOME/.sdkman/candidates/java/17.0.2-tem
 export JAVA_OPTS="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
+
+# maven
 export M2_HOME=$HOME/.sdkman/candidates/maven/current
+export MAVEN_HOME==$HOME/.sdkman/candidates/maven/current
+export MAVEN6_HOME==$HOME/.sdkman/candidates/maven/3.6.3
+alias mvn8="JAVA_HOME=$JAVA8_HOME && mvn"
+alias mvn11="JAVA_HOME=$JAVA11_HOME && mvn"
+
+# gradle
+export GRADLE_HOME=$HOME/.sdkman/candidates/gradle/current
+export GRADLE6_HOME=$HOME/.sdkman/candidates/gradle/6.9.2
+export GRADLE7_HOME=$HOME/.sdkman/candidates/gradle/7.4
+alias gradle8="JAVA_HOME=$JAVA8_HOME && gradle"
+alias gradle11="JAVA_HOME=$JAVA11_HOME && gradle"
 
 # python
 alias python3.7='/usr/local/Cellar/python@3.7/3.7.12_1/bin/python3.7'
