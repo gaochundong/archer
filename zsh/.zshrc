@@ -62,6 +62,7 @@ alias ip='ifconfig | grep "inet" | grep -v 127.0.0.1 | sort'
 alias ctags="/usr/local/Cellar/ctags/5.8_2/bin/ctags"
 alias jp='ssh xxx@jumper.xxx.com'
 alias jprm="rm -f ~/.ssh/master*"
+alias code="/usr/local/bin/code"
 
 # homebrew
 export HOMEBREW_NO_ANALYTICS=1        # will not send analytics
@@ -97,6 +98,9 @@ export GRADLE7_HOME=$HOME/.sdkman/candidates/gradle/7.4
 alias gradle8="JAVA_HOME=$JAVA8_HOME && gradle"
 alias gradle11="JAVA_HOME=$JAVA11_HOME && gradle"
 
+# android
+export ANDROID_SDK_ROOT="/usr/local/share/android-commandlinetools"
+
 # python
 alias python3.7='/usr/local/Cellar/python@3.7/3.7.12_1/bin/python3.7'
 alias python3.8='/usr/local/Cellar/python@3.8/3.8.12_1/bin/python3.8'
@@ -113,3 +117,17 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
 export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# go
+alias go15='/usr/local/opt/go@1.15/bin/go'
+alias go16='/usr/local/opt/go@1.16/bin/go'
+alias go17='/usr/local/opt/go@1.17/bin/go'
+export GODIR="/usr/local/opt/go@1.15"
+export GOCHOOSE="${GODIR}/bin/go"
+export GOROOT=$(${GOCHOOSE} env GOROOT)
+export GOVERSION=$(${GOCHOOSE} version | awk '{print $3}')
+export PATH="${GOROOT}/bin:${PATH}"
+export GOPATH="$HOME/.go/${GOVERSION}"
+export GOENV="$HOME/.go/${GOVERSION}/env"
+export GOCACHE="$HOME/.go/${GOVERSION}/cache"
+export GOMODCACHE="$HOME/.go/${GOVERSION}/mod"
