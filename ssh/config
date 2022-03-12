@@ -1,0 +1,11 @@
+Host jumper.xxx.com
+    ControlMaster auto
+    ControlPath ~/.ssh/master-%r@%h:%p
+    # 空闲4小时候自动断开，能够避免下次连接时长时间卡主
+    ControlPersist 4h
+Host github.com
+    HostName github.com
+    User gaochundong
+    IdentitiesOnly yes
+    AddKeysToAgent yes
+    IdentityFile ~/.ssh/github/id_ed25519
