@@ -33,6 +33,7 @@ POWERLEVEL9K_OS_ICON_FOREGROUND=254 # OS identifier color
 POWERLEVEL9K_OS_ICON_BACKGROUND=200 # OS identifier color
 POWERLEVEL9K_DIR_BACKGROUND=027     # Current directory background color
 POWERLEVEL9K_DIR_FOREGROUND=254     # Default current directory foreground color
+POWERLEVEL9K_INSTANT_PROMPT=quiet   # Suppress warnings
 
 # oh-my-zsh
 source $ZSH/oh-my-zsh.sh
@@ -43,6 +44,15 @@ autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
 # zinit plugins
+# zinit is a flexible and fast zshell plugin manager that will allow you to install everything from GitHub and other sites.
+# zinit load  <repo/plugin> # 加载时记录插件报告
+# zinit light <repo/plugin> # 加载时不记录
+# zinit snippet <URL>       # 通过URL加载文件
+zinit snippet OMZP::git
+zinit snippet OMZP::mvn
+zinit snippet OMZP::kubectl
+zinit snippet OMZP::multipass
+zinit snippet OMZP::microk8s
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-syntax-highlighting
@@ -50,6 +60,8 @@ zinit light zsh-users/zsh-history-substring-search
 zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light zdharma-continuum/history-search-multi-word
 zinit light ael-code/zsh-colored-man-pages
+zinit light vkolagotla/zsh-random-quotes
+zinit light babasbot/auto-fortune-cowsay-zsh
 
 # alias
 alias l='gls -l --color=always'
@@ -60,15 +72,18 @@ alias grep='grep --color=auto'
 alias h='history'
 alias ip='ifconfig | grep "inet" | grep -v 127.0.0.1 | sort'
 alias ctags="/usr/local/Cellar/ctags/5.8_2/bin/ctags"
-alias jp='ssh xxx@jumper.xxx.com'
-alias jprm="rm -f ~/.ssh/master*"
 alias code="/usr/local/bin/code"
 
 # homebrew
+export HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK=1
 export HOMEBREW_NO_ANALYTICS=1        # will not send analytics
 export HOMEBREW_NO_AUTO_UPDATE=1      # disable auto update before running install
 export HOMEBREW_NO_INSTALL_CLEANUP=1  # disable periodically auto cleanup
 export PATH="/usr/local/sbin:$PATH"
+
+# jumper
+alias jp='ssh -i ~/.ssh/jumper/id_rsa_jumper ggg@jumper.xxx.com'
+alias jprm="rm -f ~/.ssh/master*"
 
 # git
 alias gittags="git for-each-ref --sort=creatordate --format '%(refname) %(creatordate)' refs/tags"
@@ -81,8 +96,9 @@ export SDKMAN_DIR="$HOME/.sdkman"
 export JAVA_HOME=$HOME/.sdkman/candidates/java/current
 export JAVA8_HOME=$HOME/.sdkman/candidates/java/8.0.322-tem
 export JAVA11_HOME=$HOME/.sdkman/candidates/java/11.0.14-tem
-export JAVA17_HOME=$HOME/.sdkman/candidates/java/17.0.2-tem
+export JAVA17_HOME=$HOME/.sdkman/candidates/java/17.0.4.1-tem
 export JAVA_OPTS="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
+export JAVA8_ORACLE_MACOS=/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home
 
 # maven
 export M2_HOME=$HOME/.sdkman/candidates/maven/current
@@ -90,6 +106,12 @@ export MAVEN_HOME=$HOME/.sdkman/candidates/maven/current
 export MAVEN6_HOME=$HOME/.sdkman/candidates/maven/3.6.3
 alias mvn8="JAVA_HOME=$JAVA8_HOME && mvn"
 alias mvn11="JAVA_HOME=$JAVA11_HOME && mvn"
+alias mvn17="JAVA_HOME=$JAVA17_HOME && mvn"
+alias mvn8oracle="JAVA_HOME=$JAVA8_ORACLE_MACOS && mvn"
+alias mvndebug8="JAVA_HOME=$JAVA8_HOME && mvnDebug"
+alias mvndebug11="JAVA_HOME=$JAVA11_HOME && mvnDebug"
+alias mvndebug17="JAVA_HOME=$JAVA17_HOME && mvnDebug"
+alias mvndebug8oracle="JAVA_HOME=$JAVA8_ORACLE_MACOS && mvnDebug"
 
 # gradle
 export GRADLE_HOME=$HOME/.sdkman/candidates/gradle/current
@@ -97,19 +119,20 @@ export GRADLE6_HOME=$HOME/.sdkman/candidates/gradle/6.9.2
 export GRADLE7_HOME=$HOME/.sdkman/candidates/gradle/7.4
 alias gradle8="JAVA_HOME=$JAVA8_HOME && gradle"
 alias gradle11="JAVA_HOME=$JAVA11_HOME && gradle"
-
-# android
-export ANDROID_SDK_ROOT="/usr/local/share/android-commandlinetools"
+alias gradle17="JAVA_HOME=$JAVA17_HOME && gradle"
+alias gradle8oracle="JAVA_HOME=$JAVA8_ORACLE_MACOS && gradle"
 
 # python
 alias python3.7='/usr/local/Cellar/python@3.7/3.7.12_1/bin/python3.7'
 alias python3.8='/usr/local/Cellar/python@3.8/3.8.12_1/bin/python3.8'
 alias python3.9='/usr/local/Cellar/python@3.9/3.9.10/bin/python3.9'
 alias python3.10='/usr/local/Cellar/python@3.10/3.10.2/bin/python3.10'
+alias python3.11='/usr/local/Cellar/python@3.11/3.11.0/bin/python3.11'
 alias pip3.7='/usr/local/Cellar/python@3.7/3.7.12_1/bin/pip3.7'
 alias pip3.8='/usr/local/Cellar/python@3.8/3.8.12_1/bin/pip3.8'
 alias pip3.9='/usr/local/Cellar/python@3.9/3.9.10/bin/pip3.9'
 alias pip3.10='/usr/local/Cellar/python@3.10/3.10.2/bin/pip3.10'
+alias pip3.11='/usr/local/Cellar/python@3.11/3.11.0/bin/pip3.11'
 
 # nodejs
 export NVM_DIR="$HOME/.nvm"
@@ -117,17 +140,35 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
 export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export NODE_OPTIONS="--max-old-space-size=8192"
+alias mnpm="npm --registry=http://r.npm.xxx.com --cache=$HOME/.cache/mnpm --disturl=http://npm.xxx.com/mirrors/node --userconfig=$HOME/.mnpmrc" 
 
 # go
 alias go15='/usr/local/opt/go@1.15/bin/go'
 alias go16='/usr/local/opt/go@1.16/bin/go'
 alias go17='/usr/local/opt/go@1.17/bin/go'
-export GODIR="/usr/local/opt/go@1.15"
-export GOCHOOSE="${GODIR}/bin/go"
-export GOROOT=$(${GOCHOOSE} env GOROOT)
-export GOVERSION=$(${GOCHOOSE} version | awk '{print $3}')
+alias go18='/usr/local/opt/go@1.18/bin/go'
+export GODIR="/usr/local/opt/go@1.18"
+export GOBIN="${GODIR}/bin"
+export GOROOT=$(${GOBIN}/go env GOROOT)
+export GOVERSION=$(${GOBIN}/go version | awk '{print $3}')
 export PATH="${GOROOT}/bin:${PATH}"
 export GOPATH="$HOME/.go/${GOVERSION}"
 export GOENV="$HOME/.go/${GOVERSION}/env"
 export GOCACHE="$HOME/.go/${GOVERSION}/cache"
 export GOMODCACHE="$HOME/.go/${GOVERSION}/mod"
+
+# rust
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# wireshark
+export SSLKEYLOGFILE="$HOME/g/tmp/SSLKEYLOGFILE.log" # The key log file is a text file generated by applications such as Firefox, Chrome and curl.
+
+# dotnet
+export DOTNET_CLI_TELEMETRY_OPTOUT=1 # The .NET SDK telemetry feature is enabled by default. Set 1 to opt out.
+
+# android
+export ANDROID_SDK_ROOT="/usr/local/share/android-commandlinetools"
+
+# curl
+export PATH="/usr/local/opt/curl/bin:$PATH"
