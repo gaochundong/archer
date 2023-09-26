@@ -1,0 +1,10 @@
+[user]
+        name = ggg
+        email = ggg@xxx.com
+[credential]
+        helper = cache --timeout=3600
+[alias]
+        co = checkout
+        br = branch
+        ci = commit
+        st = status
