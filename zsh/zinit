@@ -4,6 +4,5 @@ brew install zinit
 # 安装位置
 source /opt/homebrew/opt/zinit/zinit.zsh
 
-
 # zinit 插件依赖命令行工具
-babasbot/fortune-cowsay-zsh  # 依赖fortune可以通过brew安装
+babasbot/fortune-cowsay-zsh  # 牛说随机谚语，依赖fortune可以通过brew安装
