@@ -79,7 +79,7 @@ export HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK=1
 export HOMEBREW_NO_ANALYTICS=1        # will not send analytics
 export HOMEBREW_NO_AUTO_UPDATE=1      # disable auto update before running install
 export HOMEBREW_NO_INSTALL_CLEANUP=1  # disable periodically auto cleanup
-export PATH="/usr/local/sbin:$PATH"
+export PATH="/opt/homebrew/bin:/usr/local/sbin:$PATH"
 
 # parameter
 CORP_ACCOUNT="xxx"
