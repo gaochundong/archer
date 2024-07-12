@@ -82,8 +82,8 @@ export HOMEBREW_NO_INSTALL_CLEANUP=1  # disable periodically auto cleanup
 export PATH="/opt/homebrew/bin:/usr/local/sbin:$PATH"
 
 # parameter
-CORP_ACCOUNT="xxx"
-CORP_DOMAIN="yyy"
+CORP_ACCOUNT="xxx"    # 把这里修改为公司账号
+CORP_DOMAIN="yyy"     # 把这里修改为公司域名
 
 # jumper
 alias jp="ssh -i ~/.ssh/jumper/id_rsa_jumper $CORP_ACCOUNT@jumper.$CORP_DOMAIN.com"
