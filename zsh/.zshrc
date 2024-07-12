@@ -39,7 +39,7 @@ POWERLEVEL9K_INSTANT_PROMPT=quiet   # Suppress warnings
 source $ZSH/oh-my-zsh.sh
 
 # zinit
-source ~/.zinit/bin/zinit.zsh
+source /opt/homebrew/opt/zinit/zinit.zsh
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
