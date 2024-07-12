@@ -1,2 +1,5 @@
 brew search zinit
 brew install zinit
+
+# 安装位置修改了
+source /opt/homebrew/opt/zinit/zinit.zsh
