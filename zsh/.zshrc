@@ -61,18 +61,13 @@ zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light zdharma-continuum/history-search-multi-word
 zinit light ael-code/zsh-colored-man-pages
 zinit light vkolagotla/zsh-random-quotes
-#zinit light babasbot/auto-fortune-cowsay-zsh  # 牛说随机谚语
+#zinit light babasbot/auto-fortune-cowsay-zsh  # 牛说随机谚语，虽然有意思，但影响打开速度
 
 # alias
-# alias l='gls -l --color=always'
-# alias ll='gls -lhaGFA --color=always'
-# alias ls='gls -hG --color=always'
 alias bat='bat --style plain'
 alias grep='grep --color=auto'
 alias h='history'
 alias ip='ifconfig | grep "inet" | grep -v 127.0.0.1 | sort'
-#alias ctags="/usr/local/Cellar/ctags/5.8_2/bin/ctags"
-#alias code="/usr/local/bin/code"
 
 # homebrew
 export HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK=1
@@ -98,10 +93,10 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 # java
 export JAVA_HOME=$HOME/.sdkman/candidates/java/current
-export JAVA8_HOME=$HOME/.sdkman/candidates/java/8.0.322-tem
-export JAVA11_HOME=$HOME/.sdkman/candidates/java/11.0.14-tem
-export JAVA17_HOME=$HOME/.sdkman/candidates/java/17.0.4.1-tem
-export JAVA21_HOME=$HOME/.sdkman/candidates/java/21.0.2-tem
+export JAVA8_HOME=$HOME/.sdkman/candidates/java/8.0.412-amzn
+export JAVA11_HOME=$HOME/.sdkman/candidates/java/11.0.23-tem
+export JAVA17_HOME=$HOME/.sdkman/candidates/java/17.0.11-tem
+export JAVA21_HOME=$HOME/.sdkman/candidates/java/21.0.3-tem
 export JAVA_OPTS="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
 export JAVA7_ORACLE_MACOS=/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home
 export JAVA8_ORACLE_MACOS=/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home
@@ -131,7 +126,7 @@ alias mvndebug8oracle="JAVA_HOME=$JAVA8_ORACLE_MACOS && mvnDebug"
 # gradle
 export GRADLE_HOME=$HOME/.sdkman/candidates/gradle/current
 export GRADLE6_HOME=$HOME/.sdkman/candidates/gradle/6.9.2
-export GRADLE7_HOME=$HOME/.sdkman/candidates/gradle/7.4
+export GRADLE7_HOME=$HOME/.sdkman/candidates/gradle/7.4.2
 alias gradle8="JAVA_HOME=$JAVA8_HOME && gradle"
 alias gradle11="JAVA_HOME=$JAVA11_HOME && gradle"
 alias gradle17="JAVA_HOME=$JAVA17_HOME && gradle"
