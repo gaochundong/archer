@@ -61,18 +61,18 @@ zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light zdharma-continuum/history-search-multi-word
 zinit light ael-code/zsh-colored-man-pages
 zinit light vkolagotla/zsh-random-quotes
-zinit light babasbot/auto-fortune-cowsay-zsh
+#zinit light babasbot/auto-fortune-cowsay-zsh  # 牛说随机谚语
 
 # alias
-alias l='gls -l --color=always'
-alias ll='gls -lhaGFA --color=always'
-alias ls='gls -hG --color=always'
+# alias l='gls -l --color=always'
+# alias ll='gls -lhaGFA --color=always'
+# alias ls='gls -hG --color=always'
 alias bat='bat --style plain'
 alias grep='grep --color=auto'
 alias h='history'
 alias ip='ifconfig | grep "inet" | grep -v 127.0.0.1 | sort'
-alias ctags="/usr/local/Cellar/ctags/5.8_2/bin/ctags"
-alias code="/usr/local/bin/code"
+#alias ctags="/usr/local/Cellar/ctags/5.8_2/bin/ctags"
+#alias code="/usr/local/bin/code"
 
 # homebrew
 export HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK=1
@@ -142,14 +142,14 @@ alias gradle8oracle="JAVA_HOME=$JAVA8_ORACLE_MACOS && gradle"
 # python
 # python@3.7 Disabled because it is deprecated upstream!
 # python@3.8 Disabled because it is deprecated upstream!
-alias python3.9='/usr/local/Cellar/python@3.9/3.9.19/bin/python3.9'
-alias python3.10='/usr/local/Cellar/python@3.10/3.10.14/bin/python3.10'
-alias python3.11='/usr/local/Cellar/python@3.11/3.11.8/bin/python3.11'
-alias python3.12='/usr/local/Cellar/python@3.12/3.12.2_1/bin/python3.12'
-alias pip3.9='/usr/local/Cellar/python@3.9/3.9.19/bin/pip3.9'
-alias pip3.10='/usr/local/Cellar/python@3.10/3.10.14/bin/pip3.10'
-alias pip3.11='/usr/local/Cellar/python@3.11/3.11.8/bin/pip3.11'
-alias pip3.12='/usr/local/Cellar/python@3.12/3.12.2_1/bin/pip3.12'
+alias python3.9='/opt/homebrew/bin/python3.9'
+alias python3.10='/opt/homebrew/bin/python3.10'
+alias python3.11='/opt/homebrew/bin/python3.11'
+alias python3.12='/opt/homebrew/bin/python3.12'
+alias pip3.9='/opt/homebrew/bin/pip3.9'
+alias pip3.10='/opt/homebrew/bin/pip3.10'
+alias pip3.11='/opt/homebrew/bin/pip3.11'
+alias pip3.12='/opt/homebrew/bin/pip3.12'
 
 # nodejs
 export NVM_DIR="$HOME/.nvm"
@@ -162,12 +162,12 @@ alias mnpm="npm --registry=http://r.npm.$CORP_DOMAIN.com --cache=$HOME/.cache/mn
 
 # go
 #go@1.18 has been disabled because it is not supported upstream!
-#alias go15='/usr/local/opt/go@1.15/bin/go'
-#alias go16='/usr/local/opt/go@1.16/bin/go'
-#alias go17='/usr/local/opt/go@1.17/bin/go'
-#alias go18='/usr/local/opt/go@1.18/bin/go'
-alias go20='/usr/local/opt/go@1.20/bin/go'
-export GODIR="/usr/local/opt/go@1.20"
+#alias go15='/opt/homebrew/opt/go@1.15/bin/go'
+#alias go16='/opt/homebrew/opt/go@1.16/bin/go'
+#alias go17='/opt/homebrew/opt/go@1.17/bin/go'
+#alias go18='/opt/homebrew/opt/go@1.18/bin/go'
+alias go20='/opt/homebrew/opt/go@1.20/bin/go'
+export GODIR="/opt/homebrew/opt/go@1.20"
 export GOBIN="${GODIR}/bin"
 export GOROOT=$(${GOBIN}/go env GOROOT)
 export GOVERSION=$(${GOBIN}/go version | awk '{print $3}')
