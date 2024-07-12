@@ -1,0 +1,2 @@
+How to disable selection highlighting on iTerm2?
+So to turn off the highlight click go to Settings > General > Selection and remove the tick from Clicking on command selects it to restrict Find and Filter
