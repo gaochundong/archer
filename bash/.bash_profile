@@ -28,6 +28,9 @@ export M2_HOME=$HOME/.sdkman/candidates/maven/current
 export GOPATH="$HOME/g/github/go"
 alias git2consul='$GOPATH/src/git2consul-go/build/bin/git2consul'
 
+# rust
+. "$HOME/.cargo/env"
+
 # sdkman
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
