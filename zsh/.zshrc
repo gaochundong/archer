@@ -81,8 +81,12 @@ export HOMEBREW_NO_AUTO_UPDATE=1      # disable auto update before running insta
 export HOMEBREW_NO_INSTALL_CLEANUP=1  # disable periodically auto cleanup
 export PATH="/usr/local/sbin:$PATH"
 
+# parameter
+CORP_ACCOUNT="xxx"
+CORP_DOMAIN="yyy"
+
 # jumper
-alias jp='ssh -i ~/.ssh/jumper/id_rsa_jumper ggg@jumper.xxx.com'
+alias jp="ssh -i ~/.ssh/jumper/id_rsa_jumper $CORP_ACCOUNT@jumper.$CORP_DOMAIN.com"
 alias jprm="rm -f ~/.ssh/master*"
 
 # git
@@ -97,8 +101,15 @@ export JAVA_HOME=$HOME/.sdkman/candidates/java/current
 export JAVA8_HOME=$HOME/.sdkman/candidates/java/8.0.322-tem
 export JAVA11_HOME=$HOME/.sdkman/candidates/java/11.0.14-tem
 export JAVA17_HOME=$HOME/.sdkman/candidates/java/17.0.4.1-tem
+export JAVA21_HOME=$HOME/.sdkman/candidates/java/21.0.2-tem
 export JAVA_OPTS="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
+export JAVA7_ORACLE_MACOS=/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home
 export JAVA8_ORACLE_MACOS=/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home
+alias java7="JAVA_HOME=$JAVA7_ORACLE_MACOS && $JAVA7_ORACLE_MACOS/bin/java"
+alias java8="JAVA_HOME=$JAVA8_HOME && $JAVA8_HOME/bin/java"
+alias java11="JAVA_HOME=$JAVA11_HOME && $JAVA11_HOME/bin/java"
+alias java17="JAVA_HOME=$JAVA17_HOME && $JAVA17_HOME/bin/java"
+alias java21="JAVA_HOME=$JAVA21_HOME && $JAVA21_HOME/bin/java"
 
 # maven
 export M2_HOME=$HOME/.sdkman/candidates/maven/current
@@ -107,10 +118,14 @@ export MAVEN6_HOME=$HOME/.sdkman/candidates/maven/3.6.3
 alias mvn8="JAVA_HOME=$JAVA8_HOME && mvn"
 alias mvn11="JAVA_HOME=$JAVA11_HOME && mvn"
 alias mvn17="JAVA_HOME=$JAVA17_HOME && mvn"
+alias mvn21="JAVA_HOME=$JAVA21_HOME && mvn"
+alias mvn7oracle="JAVA_HOME=$JAVA7_ORACLE_MACOS && mvn"
 alias mvn8oracle="JAVA_HOME=$JAVA8_ORACLE_MACOS && mvn"
 alias mvndebug8="JAVA_HOME=$JAVA8_HOME && mvnDebug"
 alias mvndebug11="JAVA_HOME=$JAVA11_HOME && mvnDebug"
 alias mvndebug17="JAVA_HOME=$JAVA17_HOME && mvnDebug"
+alias mvndebug21="JAVA_HOME=$JAVA21_HOME && mvnDebug"
+alias mvndebug7oracle="JAVA_HOME=$JAVA7_ORACLE_MACOS && mvnDebug"
 alias mvndebug8oracle="JAVA_HOME=$JAVA8_ORACLE_MACOS && mvnDebug"
 
 # gradle
@@ -120,19 +135,21 @@ export GRADLE7_HOME=$HOME/.sdkman/candidates/gradle/7.4
 alias gradle8="JAVA_HOME=$JAVA8_HOME && gradle"
 alias gradle11="JAVA_HOME=$JAVA11_HOME && gradle"
 alias gradle17="JAVA_HOME=$JAVA17_HOME && gradle"
+alias gradle21="JAVA_HOME=$JAVA21_HOME && gradle"
+alias gradle7oracle="JAVA_HOME=$JAVA7_ORACLE_MACOS && gradle"
 alias gradle8oracle="JAVA_HOME=$JAVA8_ORACLE_MACOS && gradle"
 
 # python
-alias python3.7='/usr/local/Cellar/python@3.7/3.7.12_1/bin/python3.7'
-alias python3.8='/usr/local/Cellar/python@3.8/3.8.12_1/bin/python3.8'
-alias python3.9='/usr/local/Cellar/python@3.9/3.9.10/bin/python3.9'
-alias python3.10='/usr/local/Cellar/python@3.10/3.10.2/bin/python3.10'
-alias python3.11='/usr/local/Cellar/python@3.11/3.11.0/bin/python3.11'
-alias pip3.7='/usr/local/Cellar/python@3.7/3.7.12_1/bin/pip3.7'
-alias pip3.8='/usr/local/Cellar/python@3.8/3.8.12_1/bin/pip3.8'
-alias pip3.9='/usr/local/Cellar/python@3.9/3.9.10/bin/pip3.9'
-alias pip3.10='/usr/local/Cellar/python@3.10/3.10.2/bin/pip3.10'
-alias pip3.11='/usr/local/Cellar/python@3.11/3.11.0/bin/pip3.11'
+# python@3.7 Disabled because it is deprecated upstream!
+# python@3.8 Disabled because it is deprecated upstream!
+alias python3.9='/usr/local/Cellar/python@3.9/3.9.19/bin/python3.9'
+alias python3.10='/usr/local/Cellar/python@3.10/3.10.14/bin/python3.10'
+alias python3.11='/usr/local/Cellar/python@3.11/3.11.8/bin/python3.11'
+alias python3.12='/usr/local/Cellar/python@3.12/3.12.2_1/bin/python3.12'
+alias pip3.9='/usr/local/Cellar/python@3.9/3.9.19/bin/pip3.9'
+alias pip3.10='/usr/local/Cellar/python@3.10/3.10.14/bin/pip3.10'
+alias pip3.11='/usr/local/Cellar/python@3.11/3.11.8/bin/pip3.11'
+alias pip3.12='/usr/local/Cellar/python@3.12/3.12.2_1/bin/pip3.12'
 
 # nodejs
 export NVM_DIR="$HOME/.nvm"
@@ -141,13 +158,14 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export NODE_OPTIONS="--max-old-space-size=8192"
-alias mnpm="npm --registry=http://r.npm.xxx.com --cache=$HOME/.cache/mnpm --disturl=http://npm.xxx.com/mirrors/node --userconfig=$HOME/.mnpmrc" 
+alias mnpm="npm --registry=http://r.npm.$CORP_DOMAIN.com --cache=$HOME/.cache/mnpm --disturl=http://npm.$CORP_DOMAIN.com/mirrors/node --userconfig=$HOME/.mnpmrc" 
 
 # go
 alias go15='/usr/local/opt/go@1.15/bin/go'
 alias go16='/usr/local/opt/go@1.16/bin/go'
 alias go17='/usr/local/opt/go@1.17/bin/go'
 alias go18='/usr/local/opt/go@1.18/bin/go'
+alias go20='/usr/local/opt/go@1.20/bin/go'
 export GODIR="/usr/local/opt/go@1.18"
 export GOBIN="${GODIR}/bin"
 export GOROOT=$(${GOBIN}/go env GOROOT)
