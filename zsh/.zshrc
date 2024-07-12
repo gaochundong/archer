@@ -161,12 +161,13 @@ export NODE_OPTIONS="--max-old-space-size=8192"
 alias mnpm="npm --registry=http://r.npm.$CORP_DOMAIN.com --cache=$HOME/.cache/mnpm --disturl=http://npm.$CORP_DOMAIN.com/mirrors/node --userconfig=$HOME/.mnpmrc" 
 
 # go
-alias go15='/usr/local/opt/go@1.15/bin/go'
-alias go16='/usr/local/opt/go@1.16/bin/go'
-alias go17='/usr/local/opt/go@1.17/bin/go'
-alias go18='/usr/local/opt/go@1.18/bin/go'
+#go@1.18 has been disabled because it is not supported upstream!
+#alias go15='/usr/local/opt/go@1.15/bin/go'
+#alias go16='/usr/local/opt/go@1.16/bin/go'
+#alias go17='/usr/local/opt/go@1.17/bin/go'
+#alias go18='/usr/local/opt/go@1.18/bin/go'
 alias go20='/usr/local/opt/go@1.20/bin/go'
-export GODIR="/usr/local/opt/go@1.18"
+export GODIR="/usr/local/opt/go@1.20"
 export GOBIN="${GODIR}/bin"
 export GOROOT=$(${GOBIN}/go env GOROOT)
 export GOVERSION=$(${GOBIN}/go version | awk '{print $3}')
