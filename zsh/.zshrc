@@ -141,10 +141,12 @@ alias python3.9='/opt/homebrew/bin/python3.9'
 alias python3.10='/opt/homebrew/bin/python3.10'
 alias python3.11='/opt/homebrew/bin/python3.11'
 alias python3.12='/opt/homebrew/bin/python3.12'
+alias python3.13='/opt/homebrew/bin/python3.13'
 alias pip3.9='/opt/homebrew/bin/pip3.9'
 alias pip3.10='/opt/homebrew/bin/pip3.10'
 alias pip3.11='/opt/homebrew/bin/pip3.11'
 alias pip3.12='/opt/homebrew/bin/pip3.12'
+alias pip3.13='/opt/homebrew/bin/pip3.13'
 
 # nodejs
 export NVM_DIR="$HOME/.nvm"
@@ -186,3 +188,6 @@ export ANDROID_SDK_ROOT="/usr/local/share/android-commandlinetools"
 
 # curl
 export PATH="/usr/local/opt/curl/bin:$PATH"
+
+# neofetch
+neofetch
