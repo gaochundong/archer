@@ -54,7 +54,7 @@ multipass exec microk8s-vm -- sudo snap info microk8s
 # 默认 ubuntu 账号无权限操作集群，均需要 sudo
 # 可将 ubuntu 账号加入 microk8s 用户组以便简化访问
 multipass exec microk8s-vm -- sudo usermod -a -G microk8s ubuntu
-multipass exec microk8s-vm -- sudo sudo chown -f -R ubuntu ~/.kube
+multipass exec microk8s-vm -- sudo chown -f -R ubuntu ~/.kube
 ```
 
 ### 增加访问公钥，简化操作
