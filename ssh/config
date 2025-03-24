@@ -8,4 +8,10 @@ Host github.com
     User gaochundong
     IdentitiesOnly yes
     AddKeysToAgent yes
-    IdentityFile ~/.ssh/github/id_ed25519
+    IdentityFile /Users/gaochundong/g/service/ssh/github/id_ed25519
+Host 192.168.64.2
+    HostName 192.168.64.2
+    User ubuntu
+    IdentitiesOnly yes
+    AddKeysToAgent yes
+    IdentityFile /Users/gaochundong/g/service/ssh/multipass/id_ed25519
