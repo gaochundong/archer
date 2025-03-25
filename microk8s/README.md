@@ -48,9 +48,11 @@ sudo snap install microk8s --classic --channel=1.28/stable
 # 查看安装的microk8s版本，若microk8s没启动起来，可以inspect并通过events分析原因
 sudo snap list
 sudo microk8s version
+sudo microk8s status
 sudo microk8s inspect
 sudo microk8s kubectl get all --all-namespaces
 sudo microk8s kubectl get events --all-namespaces
+microk8s kubectl events --all-namespaces
 ```
 
 ### 查看 microk8s 的 snap 包信息，比如版本信息
@@ -74,6 +76,8 @@ multipass exec microk8s-vm -- sudo chown -f -R ubuntu ~/.kube
 # 在 ~/.ssh/authorized_keys 增加自己的公钥，则可方便的进行SSH登录
 multipass shell microk8s-vm
 ssh ubuntu@192.168.64.2
+# 本机电脑.ssh用的私钥，authorized_keys中配置的是公钥
+# 本机电脑提示后会修改known_hosts，添加IP地址
 ```
 
 ### 查看磁盘空间
@@ -86,6 +90,16 @@ multipass exec microk8s-vm -- df -kh
 
 ```bash
 multipass exec microk8s-vm -- /snap/bin/microk8s.config
+```
+
+### 配置端口转发
+
+```bash
+# 端口转发dashboard地址
+microk8s kubectl port-forward -n kube-system service/kubernetes-dashboard 10443:443 --address 0.0.0.0
+
+# Chrome浏览器访问 https://192.168.64.6:10443 如下命令获取Token
+microk8s kubectl describe secret -n kube-system microk8s-dashboard-token
 ```
 
 ### 在 kubeconfig 中可以找到集群信息，可登录查看
