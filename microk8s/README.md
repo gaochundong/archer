@@ -40,6 +40,17 @@ multipass purge
 ```bash
 multipass exec microk8s-vm -- sudo snap install microk8s --classic
 multipass exec microk8s-vm -- sudo iptables -P FORWARD ACCEPT
+
+# microk8s部分版本有问题，可先删除，再指定版本安装
+sudo snap remove --purge microk8s
+sudo snap install microk8s --classic --channel=1.28/stable
+
+# 查看安装的microk8s版本，若microk8s没启动起来，可以inspect并通过events分析原因
+sudo snap list
+sudo microk8s version
+sudo microk8s inspect
+sudo microk8s kubectl get all --all-namespaces
+sudo microk8s kubectl get events --all-namespaces
 ```
 
 ### 查看 microk8s 的 snap 包信息，比如版本信息
