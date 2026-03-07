@@ -149,13 +149,13 @@ alias pip3.12='/opt/homebrew/bin/pip3.12'
 alias pip3.13='/opt/homebrew/bin/pip3.13'
 
 # nodejs
-export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-export PATH="$HOME/.yarn/bin:$PATH"
-export PATH="$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-export NODE_OPTIONS="--max-old-space-size=8192"
-alias mnpm="npm --registry=http://r.npm.$CORP_DOMAIN.com --cache=$HOME/.cache/mnpm --disturl=http://npm.$CORP_DOMAIN.com/mirrors/node --userconfig=$HOME/.mnpmrc" 
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+#[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+#export PATH="$HOME/.yarn/bin:$PATH"
+#export PATH="$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+#export NODE_OPTIONS="--max-old-space-size=8192"
+#alias mnpm="npm --registry=http://r.npm.$CORP_DOMAIN.com --cache=$HOME/.cache/mnpm --disturl=http://npm.$CORP_DOMAIN.com/mirrors/node --userconfig=$HOME/.mnpmrc" 
 
 # go
 #go@1.18 has been disabled because it is not supported upstream!
