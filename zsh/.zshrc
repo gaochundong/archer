@@ -1,3 +1,10 @@
+# add this to the TOP of your .zshrc, in case you need profiling what's actually slowing down.
+#zmodload zsh/zprof
+
+# company
+CORP_ACCOUNT="xxxx"    # 把这里修改为公司账号
+CORP_DOMAIN="yyyy"         # 把这里修改为公司域名
+
 # display locale settings, see `locale`
 export LANG=en_US.UTF-8       # Used as a substitute for any unset LC_* variable.
 export LANGUAGE=en_US         # List of fallback message translation languages.
@@ -74,15 +81,7 @@ export HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK=1
 export HOMEBREW_NO_ANALYTICS=1        # will not send analytics
 export HOMEBREW_NO_AUTO_UPDATE=1      # disable auto update before running install
 export HOMEBREW_NO_INSTALL_CLEANUP=1  # disable periodically auto cleanup
-export PATH="/opt/homebrew/bin:/usr/local/sbin:$PATH"
-
-# parameter
-CORP_ACCOUNT="xxx"    # 把这里修改为公司账号
-CORP_DOMAIN="yyy"     # 把这里修改为公司域名
-
-# jumper
-alias jp="ssh -i ~/.ssh/jumper/id_rsa_jumper $CORP_ACCOUNT@jumper.$CORP_DOMAIN.com"
-alias jprm="rm -f ~/.ssh/master*"
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/sbin:$PATH"
 
 # git
 alias gittags="git for-each-ref --sort=creatordate --format '%(refname) %(creatordate)' refs/tags"
@@ -93,30 +92,32 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 # java
 export JAVA_HOME=$HOME/.sdkman/candidates/java/current
-export JAVA8_HOME=$HOME/.sdkman/candidates/java/8.0.412-amzn
+export JAVA7_ORACLE_MACOS=/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home
+export JAVA8_ORACLE_MACOS=/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home
 export JAVA11_HOME=$HOME/.sdkman/candidates/java/11.0.23-tem
 export JAVA17_HOME=$HOME/.sdkman/candidates/java/17.0.11-tem
-export JAVA21_HOME=$HOME/.sdkman/candidates/java/21.0.3-tem
+export JAVA21_HOME=$HOME/.sdkman/candidates/java/21.0.9-tem
+export JAVA25_HOME=$HOME/.sdkman/candidates/java/25.0.1-tem
 export JAVA_OPTS="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
-export JAVA7_ORACLE_MACOS=/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home
-export JAVA8_ORACLE_MACOS=/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home
 alias java7="JAVA_HOME=$JAVA7_ORACLE_MACOS && $JAVA7_ORACLE_MACOS/bin/java"
-alias java8="JAVA_HOME=$JAVA8_HOME && $JAVA8_HOME/bin/java"
+alias java8="JAVA_HOME=$JAVA8_ORACLE_MACOS && $JAVA8_ORACLE_MACOS/bin/java"
 alias java11="JAVA_HOME=$JAVA11_HOME && $JAVA11_HOME/bin/java"
 alias java17="JAVA_HOME=$JAVA17_HOME && $JAVA17_HOME/bin/java"
 alias java21="JAVA_HOME=$JAVA21_HOME && $JAVA21_HOME/bin/java"
+alias java25="JAVA_HOME=$JAVA25_HOME && $JAVA25_HOME/bin/java"
 
 # maven
 export M2_HOME=$HOME/.sdkman/candidates/maven/current
 export MAVEN_HOME=$HOME/.sdkman/candidates/maven/current
 export MAVEN6_HOME=$HOME/.sdkman/candidates/maven/3.6.3
-alias mvn8="JAVA_HOME=$JAVA8_HOME && mvn"
+alias mvn8="JAVA_HOME=$JAVA8_ORACLE_MACOS && mvn"
 alias mvn11="JAVA_HOME=$JAVA11_HOME && mvn"
 alias mvn17="JAVA_HOME=$JAVA17_HOME && mvn"
 alias mvn21="JAVA_HOME=$JAVA21_HOME && mvn"
+alias mvn25="JAVA_HOME=$JAVA25_HOME && mvn"
 alias mvn7oracle="JAVA_HOME=$JAVA7_ORACLE_MACOS && mvn"
 alias mvn8oracle="JAVA_HOME=$JAVA8_ORACLE_MACOS && mvn"
-alias mvndebug8="JAVA_HOME=$JAVA8_HOME && mvnDebug"
+alias mvndebug8="JAVA_HOME=$JAVA8_ORACLE_MACOS && mvnDebug"
 alias mvndebug11="JAVA_HOME=$JAVA11_HOME && mvnDebug"
 alias mvndebug17="JAVA_HOME=$JAVA17_HOME && mvnDebug"
 alias mvndebug21="JAVA_HOME=$JAVA21_HOME && mvnDebug"
@@ -127,10 +128,11 @@ alias mvndebug8oracle="JAVA_HOME=$JAVA8_ORACLE_MACOS && mvnDebug"
 export GRADLE_HOME=$HOME/.sdkman/candidates/gradle/current
 export GRADLE6_HOME=$HOME/.sdkman/candidates/gradle/6.9.2
 export GRADLE7_HOME=$HOME/.sdkman/candidates/gradle/7.4.2
-alias gradle8="JAVA_HOME=$JAVA8_HOME && gradle"
+alias gradle8="JAVA_HOME=$JAVA8_ORACLE_MACOS && gradle"
 alias gradle11="JAVA_HOME=$JAVA11_HOME && gradle"
 alias gradle17="JAVA_HOME=$JAVA17_HOME && gradle"
 alias gradle21="JAVA_HOME=$JAVA21_HOME && gradle"
+alias gradle25="JAVA_HOME=$JAVA25_HOME && gradle"
 alias gradle7oracle="JAVA_HOME=$JAVA7_ORACLE_MACOS && gradle"
 alias gradle8oracle="JAVA_HOME=$JAVA8_ORACLE_MACOS && gradle"
 
@@ -142,20 +144,15 @@ alias python3.10='/opt/homebrew/bin/python3.10'
 alias python3.11='/opt/homebrew/bin/python3.11'
 alias python3.12='/opt/homebrew/bin/python3.12'
 alias python3.13='/opt/homebrew/bin/python3.13'
+alias python3.14='/opt/homebrew/bin/python3.14'
 alias pip3.9='/opt/homebrew/bin/pip3.9'
 alias pip3.10='/opt/homebrew/bin/pip3.10'
 alias pip3.11='/opt/homebrew/bin/pip3.11'
 alias pip3.12='/opt/homebrew/bin/pip3.12'
 alias pip3.13='/opt/homebrew/bin/pip3.13'
-
-# nodejs
-#export NVM_DIR="$HOME/.nvm"
-#[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-#[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-#export PATH="$HOME/.yarn/bin:$PATH"
-#export PATH="$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-#export NODE_OPTIONS="--max-old-space-size=8192"
-#alias mnpm="npm --registry=http://r.npm.$CORP_DOMAIN.com --cache=$HOME/.cache/mnpm --disturl=http://npm.$CORP_DOMAIN.com/mirrors/node --userconfig=$HOME/.mnpmrc" 
+alias pip3.14='/opt/homebrew/bin/pip3.14'
+alias python='/opt/homebrew/bin/python3.14'
+alias pip='/opt/homebrew/bin/pip3.14'
 
 # go
 #go@1.18 has been disabled because it is not supported upstream!
@@ -174,6 +171,14 @@ export GOENV="$HOME/.go/${GOVERSION}/env"
 export GOCACHE="$HOME/.go/${GOVERSION}/cache"
 export GOMODCACHE="$HOME/.go/${GOVERSION}/mod"
 
+# nodejs - load nvm cost so much time here
+export NVM_DIR="$HOME/.nvm"
+# [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+# [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+export PATH="$HOME/.yarn/bin:$PATH"
+export PATH="$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export NODE_OPTIONS="--max-old-space-size=8192"
+
 # rust
 export PATH="$HOME/.cargo/bin:$PATH"
 
@@ -189,5 +194,42 @@ export ANDROID_SDK_ROOT="/usr/local/share/android-commandlinetools"
 # curl
 export PATH="/usr/local/opt/curl/bin:$PATH"
 
-# neofetch
-neofetch
+# mysql
+export PATH="/opt/homebrew/opt/mysql@8.0/bin:$PATH"
+
+# fastfetch - show macos greeter but slower, and neofetch was deprecated
+fastfetch --config neofetch --pipe false
+
+# onefetch - git repository greeter
+last_repository=
+check_directory_for_new_repository() {
+  current_repository=$(git rev-parse --show-toplevel 2> /dev/null)
+ 
+  if [ "$current_repository" ] && \
+     [ "$current_repository" != "$last_repository" ]; then
+    onefetch --number-of-authors 10
+  fi
+  last_repository=$current_repository
+}
+cd() {
+  builtin cd "$@"
+  check_directory_for_new_repository
+}
+check_directory_for_new_repository
+
+# docker desktop&cli
+fpath=(/Users/$CORP_ACCOUNT/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+
+# bun - JavaScript runtime and toolkit.
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# lm-studio 
+export PATH="$PATH:/Users/gaochundong/.lmstudio/bin"
+
+# add this to the BOTTOM of your .zshrc, in case you need profiling what's actually slowing down.
+#zprof
+
+#################################################################################################
