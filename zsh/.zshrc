@@ -179,6 +179,10 @@ export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export NODE_OPTIONS="--max-old-space-size=8192"
 
+# bun - JavaScript runtime and toolkit.
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
 # rust
 export PATH="$HOME/.cargo/bin:$PATH"
 
@@ -221,13 +225,6 @@ check_directory_for_new_repository
 fpath=(/Users/$CORP_ACCOUNT/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
-
-# bun - JavaScript runtime and toolkit.
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-# lm-studio 
-export PATH="$PATH:/Users/gaochundong/.lmstudio/bin"
 
 # add this to the BOTTOM of your .zshrc, in case you need profiling what's actually slowing down.
 #zprof
